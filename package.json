@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-site",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,20 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tundeiness/Portfolio-Site.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Tunde Oretade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tundeiness/Portfolio-Site/issues"
+  },
+  "homepage": "https://github.com/tundeiness/Portfolio-Site#readme"
 }
