@@ -1,16 +1,14 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import {
-  BrowserRouter as Router, Route, Link, Switch,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-// import logo from './logo.svg';
 import './App.css';
 
 import Footer from './Components/Footer';
+import Home from './pages/Home';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,35 +24,35 @@ class App extends React.Component {
       home: {
         title: 'Welcome!',
         subtitle: 'lorem Ipsum',
-        text: 'some text',
+        slug: 'some text',
       },
       about: {
         title: 'About the creator',
         subtitle: 'lorem Ipsum',
-        text: 'some text',
+        slug: 'some text',
       },
       contact: {
         title: 'Contact the User',
         subtitle: 'lorem Ipsum',
-        text: 'some text',
+        slug: 'some text',
       },
       project: {
         title: 'See my projects',
         subtitle: 'lorem Ipsum',
-        text: 'some text',
+        slug: 'some text',
       },
 
     };
   }
 
   render() {
+    const { home } = this.state;
     return (
       // <div className="App">
       //   <p>Hello World</p>
       // </div>
       <Router>
         <Container className="p-0" fluid="true">
-          {/* <p>Hello World! </p> */}
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>O`tunde</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
@@ -67,7 +65,8 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
+          <Route path="/" exact render={() => <Home title={home.title} subtitle={home.subtitle} slug={home.slug} />} />
+          {/* <Route exact path="/" component={Home} /> */}
           <Footer />
         </Container>
       </Router>
