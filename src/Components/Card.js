@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+
 // import Hero from './Hero';
 // import Carousel from './Carousel';
+import Cardinfo from './Cardinfo';
 
 const Card = ({ item }) => (
   <div>
