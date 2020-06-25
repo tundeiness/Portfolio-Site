@@ -9,6 +9,9 @@ import './App.css';
 
 import Footer from './Components/Footer';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
+import About from './pages/About';
 
 class App extends React.Component {
   constructor(props) {
@@ -46,7 +49,9 @@ class App extends React.Component {
   }
 
   render() {
-    const { home } = this.state;
+    const {
+      home, about, contact, project,
+    } = this.state;
     return (
       // <div className="App">
       //   <p>Hello World</p>
@@ -66,6 +71,12 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
           <Route path="/" exact render={() => <Home title={home.title} subtitle={home.subtitle} slug={home.slug} />} />
+
+          <Route path="/about" exact render={() => <About title={about.title} subtitle={about.subtitle} slug={about.slug} />} />
+
+          <Route path="/projects" exact render={() => <Projects title={project.title} subtitle={project.subtitle} slug={project.slug} />} />
+
+          <Route path="/contact" exact render={() => <Contact title={contact.title} subtitle={contact.subtitle} slug={contact.slug} />} />
           {/* <Route exact path="/" component={Home} /> */}
           <Footer />
         </Container>
