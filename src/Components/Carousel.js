@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Hero from './Hero';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Card from './Card';
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -54,8 +56,13 @@ class Carousel extends React.Component {
   }
 
   render() {
+    const { items } = this.state;
     return (
-      <p>Carousel Works!</p>
+      <Container fluid>
+        <Row className="justify-content-around">
+          {this.makeCards(items)}
+        </Row>
+      </Container>
     );
   }
 }
