@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Container from 'react-bootstrap/Container';
@@ -38,7 +39,7 @@ class Carousel extends React.Component {
     this.handleCardClick = this.handleCardClick.bind(this);
   }
 
-  handleCardClick(id, card) {
+  handleCardClick(id) {
     const { items } = this.state;
     const item = [...items];
     item[id].selected = !item[id].selected;
@@ -52,7 +53,7 @@ class Carousel extends React.Component {
   }
 
   makeCards(items) {
-    return items.map(item => <Card item={item} onClick={e => this.handleCardClick(item.id, e)} key={item.id} />);
+    return items.map(item => <Card item={item} click={e => this.handleCardClick(item.id, e)} key={item.id} />);
   }
 
   render() {

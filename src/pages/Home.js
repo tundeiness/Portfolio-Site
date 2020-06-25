@@ -4,8 +4,10 @@ import Hero from '../Components/Hero';
 import Carousel from '../Components/Carousel';
 
 const Home = ({ title, subtitle, slug }) => (
-  <Hero title={title} subtitle={subtitle} slug={slug} />,
+  <div>
+    <Hero title={title} subtitle={subtitle} slug={slug} />
     <Carousel />
+  </div>
 );
 
 export default Home;
