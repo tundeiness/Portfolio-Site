@@ -26,8 +26,8 @@ class App extends React.Component {
       ],
       home: {
         title: 'Welcome!',
-        subtitle: 'lorem Ipsum',
-        slug: 'some text',
+        subtitle: 'Projects that showcases skills',
+        slug: 'feel free to check `em out',
       },
       about: {
         title: 'About the creator',
