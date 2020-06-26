@@ -34,7 +34,7 @@ class Contact extends React.Component {
 
     this.setState({
       disabled: true,
-      emailSent: false,
+      // emailSent: false,
     });
   }
 
