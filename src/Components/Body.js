@@ -9,7 +9,7 @@ import Header from './Header';
 
 const Body = ({ title, subtitle, slug }) => (
   <Container className="p-0 cont-color" fluid>
-    <Row className="flex-sm-column flex-lg-row ">
+    <Row className="flex-sm-column flex-lg-row cont-row ">
       <Col className="px-5 row-col-color-1" border="primary" xs={12} lg={5}>
         {/* 1 of 2 Header */}
         <Header />
