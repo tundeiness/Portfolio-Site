@@ -1,8 +1,10 @@
+/* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
@@ -13,17 +15,21 @@ import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import About from './pages/About';
 
+// import Header from './Components/Header';
+// import Navigation from './Components/Navigation';
+import Body from './Components/Body';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: 'O`tunde',
-      headerLinks: [
-        { title: 'Home', path: '/' },
-        { title: 'Projects', path: '/projects' },
-        { title: 'About', path: '/about' },
-        { title: 'Contact', path: '/contact' },
-      ],
+      // title: 'O`tunde',
+      // headerLinks: [
+      //   { title: 'Home', path: '/' },
+      //   { title: 'Projects', path: '/projects' },
+      //   { title: 'About', path: '/about' },
+      //   { title: 'Contact', path: '/contact' },
+      // ],
       home: {
         title: 'Welcome!',
         subtitle: 'Projects that showcases skills',
@@ -53,11 +59,9 @@ class App extends React.Component {
       home, about, contact, project,
     } = this.state;
     return (
-      // <div className="App">
-      //   <p>Hello World</p>
-      // </div>
       <Router>
         <Container className="p-0" fluid="true">
+
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>O`tunde</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
@@ -70,14 +74,19 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Route path="/" exact render={() => <Home title={home.title} subtitle={home.subtitle} slug={home.slug} />} />
+          <Body />
+          {/* <Navigation /> */}
 
-          <Route path="/about" exact render={() => <About title={about.title} subtitle={about.subtitle} slug={about.slug} />} />
+          {/* <Header border="danger" /> */}
+
+          {/* <Route path="/" exact render={() => <Home title={home.title} subtitle={home.subtitle} slug={home.slug} />} /> */}
+
+          {/* <Route path="/about" exact render={() => <About title={about.title} subtitle={about.subtitle} slug={about.slug} />} />
 
           <Route path="/projects" exact render={() => <Projects title={project.title} subtitle={project.subtitle} slug={project.slug} />} />
 
-          <Route path="/contact" exact render={() => <Contact title={contact.title} subtitle={contact.subtitle} slug={contact.slug} />} />
-          {/* <Route exact path="/" component={Home} /> */}
+          <Route path="/contact" exact render={() => <Contact title={contact.title} subtitle={contact.subtitle} slug={contact.slug} />} /> */}
+
           <Footer />
         </Container>
       </Router>

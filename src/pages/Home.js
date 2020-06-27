@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Row from 'react-bootstrap/Row';
 import Hero from '../Components/Hero';
-import Carousel from '../Components/Carousel';
+// import Carousel from '../Components/Carousel';
 
 const Home = ({ title, subtitle, slug }) => (
-  <div>
+  // <Container className="p-0" fluid="true"></Container>
+  <Row lg={2}>
     <Hero title={title} subtitle={subtitle} slug={slug} />
-    <Carousel />
-  </div>
+    {/* <Carousel /> */}
+  </Row>
 );
 
 export default Home;

@@ -48,6 +48,7 @@ class Contact extends React.Component {
       })
       .catch(err => {
         this.setState({ disabled: false, emailSent: false });
+        console.log('Error', err);
       });
   }
 
