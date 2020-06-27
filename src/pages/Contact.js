@@ -38,7 +38,7 @@ class Contact extends React.Component {
       // emailSent: false,
     });
 
-    Axios.post('http://localhost:3000/api/email')
+    Axios.post('http://localhost:4040/api/email')
       .then(res => {
         if (res.data.success) {
           this.setState({ disabled: false, emailSent: true });
