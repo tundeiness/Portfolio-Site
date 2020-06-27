@@ -76,6 +76,21 @@ code {
   border: 1px solid black;
 }
 
+/* .row-inner-col{
+  border-radius: 100%;
+} */
+
+.image-avatar{
+  border-radius: 100%;
+  /* width: 6.25em; */
+  margin-bottom: 1em;
+}
+
+.image-avatar img {
+  border-radius: 100%;
+  width: 100%;
+}
+
 .row-col-color-2{
   background: #ee6352;
 }
