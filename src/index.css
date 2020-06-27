@@ -52,3 +52,15 @@ code {
   padding: 10px 15px;
   color: #ee6352;
 }
+
+.cont-color{
+  border: 1px solid #ee6352;
+}
+
+.row-col-color-1{
+  background: #57a773;
+}
+
+.row-col-color-2{
+  background: #ee6352;
+}
