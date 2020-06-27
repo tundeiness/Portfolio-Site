@@ -58,7 +58,13 @@ code {
 }
 
 .row-col-color-1{
-  background: #57a773;
+  background: #1F1815;
+  background-attachment: scroll;
+  background-position: top left, center center;
+  background-size: auto, cover;
+  /* background-image: url(images/overlay.png), url(../../images/bg.jpg); */
+  background-repeat: repeat, no-repeat;
+
 }
 
 .row-col-color-2{
