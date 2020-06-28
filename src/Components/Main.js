@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
+import Contact from '../pages/Contact';
+
 const Main = () => (
   <Row className="flex-column">
     <Col className="main-col-one" id="About">
@@ -28,12 +30,13 @@ const Main = () => (
     <Col className="border-top" id="next">Section two</Col>
     <Col className="main-col-three" id="next-form">
       <section id="three">
-        <h2>Get In Touch</h2>
+        {/* <h2>Get In Touch</h2>
         <p>
           Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
-        </p>
+        </p> */}
         <div className="row">
-          <div className="col-8 col-12-small">
+          <Contact />
+          {/* <div className="col-8 col-12-small">
             <form method="post" action="#">
               <div className="row gtr-uniform gtr-50">
                 <div className="col-6 col-12-xsmall">
@@ -50,8 +53,9 @@ const Main = () => (
             <ul className="actions">
               <li><input type="submit" value="Send Message" /></li>
             </ul>
-          </div>
-          <div className="col-4 col-12-small">
+          </div> */}
+
+          {/* <div className="col-4 col-12-small">
             <ul className="labeled-icons">
               <li>
                 <h3 className="icon solid fa-home"><span className="label">Address</span></h3>
@@ -74,7 +78,7 @@ const Main = () => (
                 <a href="#">hello@untitled.tld</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </section>
     </Col>
