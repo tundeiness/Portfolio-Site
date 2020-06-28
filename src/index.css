@@ -136,7 +136,8 @@ strong{
 }
 
 .main-button{
-  border: 3px solid #787878 !important;
+  /* border: 3px solid #787878 !important; */
+  border: 3px solid #e0e2db !important;
 }
 
 .main-button:hover{
@@ -163,11 +164,12 @@ strong{
 .button:hover{
   text-decoration: none;
   color: #49bf9d;
+  background-color: none;
 }
 
-.main-button > .button:hover{
+/* .main-button > .button:hover{
   color: #49bf9d;
-}
+} */
 
 .main-button{
   margin-bottom: 2em;
