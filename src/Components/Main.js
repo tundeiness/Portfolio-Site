@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 const Main = () => (
   <Row className="flex-column">
-    <Col className="border-bottom" id="About">
+    <Col className="main-col" id="About">
       <section id="one">
         <header className="major">
           <h2>
@@ -25,7 +25,7 @@ const Main = () => (
         </Button>
       </section>
     </Col>
-    <Col className="border-bottom">Section two</Col>
+    <Col className="border-top" id="next">Section two</Col>
     <Col className="border-bottom">Section three</Col>
     <Col>Footer</Col>
   </Row>
