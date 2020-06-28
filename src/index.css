@@ -178,3 +178,39 @@ strong{
   margin-top: 4em;
   padding-top: 4em;
 }
+
+/* Section three Form */
+
+#three{
+    border-top: solid 2px #efefef;
+    /* margin: 4em 0 0 0; */
+    margin-top: 4em;
+    /* margin-right: 0px; */
+    margin-bottom: 0px;
+    /* margin-left: 0px; */
+    /* padding: 4em 0 0 0; */
+    padding-top: 4em;
+    /* padding-right: 0px; */
+    /* padding-bottom: 0px; */
+    /* padding-left: 0px; */
+}
+
+#three > h2{
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #787878;
+    font-weight: 400;
+    line-height: 1em;
+    /* margin: 0 0 1em 0; */
+    /* margin-top: 0px;
+    margin-right: 0px; */
+    margin-bottom: 1em;
+    /* margin-left: 0px; */
+}
+
+#three > p{
+  /* margin-top: 0px; */
+    /* margin-right: 0px; */
+    margin-bottom: 2em;
+    /* margin-left: 0px; */
+}

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prefer-stateless-function */
@@ -61,6 +62,10 @@ class Contact extends React.Component {
       <div>
         <Hero title={title} />
         <Content>
+          <h2>Get In Touch</h2>
+          <p>
+            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
+          </p>
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
               <Form.Label htmlFor="full-name"> Full-Name</Form.Label>
