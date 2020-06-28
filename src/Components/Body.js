@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 // import Hero from './Hero';
 // import Carousel from '../Components/Carousel';
 import Header from './Header';
+import Main from './Main';
 
 const Body = ({ title, subtitle, slug }) => (
   <Container className="p-0 cont-color" fluid>
@@ -14,7 +15,9 @@ const Body = ({ title, subtitle, slug }) => (
         {/* 1 of 2 Header */}
         <Header />
       </Col>
-      <Col className="px-5 row-col-color-2" border="primary" xs={12} lg={7}>2 of 2 Contents</Col>
+      <Col className="px-5 row-col-color-2" border="primary" xs={12} lg={7}>
+        <Main />
+      </Col>
     </Row>
   </Container>
 

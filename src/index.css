@@ -69,11 +69,13 @@ code {
   background-image: url(https://user-images.githubusercontent.com/25479050/85929387-374e8580-b8ac-11ea-8824-01ef6909d58a.png), url(https://user-images.githubusercontent.com/25479050/85928869-43d0df00-b8a8-11ea-842a-fc131cd27956.jpg);
   background-repeat: repeat, no-repeat;
   height: 100%;
+  text-align: center;
 
 }
 
 .row-inner{
   border: 1px solid black;
+  margin-top: 5em;
 }
 
 /* .row-inner-col{
@@ -90,10 +92,11 @@ code {
 }
 
 h1{
-  font-size: 1em;
+  font-size: 1.35em !important;
   color: rgba(255, 255, 255, 0.5);
-  line-height: 1.5em;
+  line-height: 1.75em;
   font-weight: 400;
+  text-align: center;
 }
 
 h1 > a{
