@@ -8,7 +8,7 @@ const Header = () => (
   <Row className="flex-column  row-inner">
     <Col xs={12} className=" d-flex justify-content-center">
       <a href="#" className="d-inline-block image-avatar mx-3">
-        <img src="https://user-images.githubusercontent.com/25479050/85928866-43384880-b8a8-11ea-89ab-9d42b1ae286d.jpg" alt="avatar name" />
+        <img src="https://user-images.githubusercontent.com/25479050/85928866-43384880-b8a8-11ea-89ab-9d42b1ae286d.jpg" alt="avatar-name" />
       </a>
     </Col>
     <Col xs={12}>
@@ -25,6 +25,11 @@ const Header = () => (
         <a href="http://html5up.net">HTML5 UP</a>
 
       </h1>
+    </Col>
+  </Row>
+  <Row className="row-footer" id='footer'>
+    <Col className='footer-inner' lg={5} xs={12}>
+      <p>Footer lies here!</p>
     </Col>
   </Row>
 );
