@@ -54,7 +54,7 @@ code {
 }
 
 .cont-row{
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* overflow-y: hidden; */
 }
 
@@ -72,10 +72,13 @@ code {
   /* min-height: 100%; */
   /* overflow: hidden; */
   text-align: center;
+  min-height: 100vh;
+  /* position: fixed !important; */
   /* flex: 0 0 auto; */
   /* position: fixed !important;
   z-index: 1000000; */
   /* height: 100%; */
+
 }
 
 /* .header{
@@ -138,9 +141,24 @@ strong{
 
 .row-col-color-2{
   background: #ee6352;
+  overflow-y: auto;
+  /* overflow: auto;
+  position: relative;
+  left:13em; */
+
+  /* left:14.08em; */
   /* position: relative !important;
   left: 28.1em; */
 }
+
+.test{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+
+
 
 /* Section one */
 
