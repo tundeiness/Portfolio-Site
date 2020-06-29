@@ -9,12 +9,12 @@ import Header from './Header';
 import Main from './Main';
 
 const Body = ({ title, subtitle, slug }) => (
-  <Container className="p-0 cont-color" fluid>
+  <Container className="cont-color" fluid>
     <Row className="flex-sm-column flex-lg-row cont-row ">
-      <Col className="px-5 row-col-color-1" xs={12} lg={5}>
-        <Header className="header" />
+      <Col className="px-5 row-col-color-1 " xs={12} lg={4}>
+        <Header />
       </Col>
-      <Col className="px-5 row-col-color-2" xs={12} lg={7}>
+      <Col className="px-5 row-col-color-2 " xs={12} lg={8}>
         <Main />
       </Col>
     </Row>
