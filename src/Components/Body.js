@@ -10,7 +10,7 @@ import Main from './Main';
 
 const Body = ({ title, subtitle, slug }) => (
   <Container className="cont-color" fluid>
-    <Row className="flex-sm-column flex-lg-row cont-row ">
+    <Row className="flex-sm-column flex-lg-row cont-row d-flex justify-content-lg-around">
       <Col className="px-5 row-col-color-1 " xs={12} lg={4}>
         <Header />
       </Col>
