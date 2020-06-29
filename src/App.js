@@ -62,7 +62,7 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid="true">
 
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          {/* <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>O`tunde</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
@@ -73,7 +73,7 @@ class App extends React.Component {
                 <Link className="nav-link" to="/Projects">Projects</Link>
               </Nav>
             </Navbar.Collapse>
-          </Navbar>
+          </Navbar> */}
           <Body />
           {/* <Navigation /> */}
 
