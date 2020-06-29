@@ -28,7 +28,7 @@ const Header = () => (
         </h1>
       </Col>
     </Row>
-    <Row className="row-footer" id="footer">
+    <Row className=" flex-column row-footer" id="footer">
       <Col className="footer-inner" lg={5} xs={12}>
         <ul className="icons">
           <li>
