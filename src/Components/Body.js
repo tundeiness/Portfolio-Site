@@ -10,11 +10,11 @@ import Main from './Main';
 
 const Body = ({ title, subtitle, slug }) => (
   <Container className="cont-color" fluid>
-    <Row className="flex-sm-column flex-lg-row cont-row d-flex justify-content-lg-around">
-      <Col className="px-5 row-col-color-1 " xs={12} lg={4}>
+    <Row className="d-flex justify-content-center flex-xs-column flex-sm-column flex-md-column flex-lg-row cont-row">
+      <Col className="px-5 row-col-color-1 " xs={12} sm={12} md={12} lg={4}>
         <Header />
       </Col>
-      <Col className="px-5 row-col-color-2 " xs={12} lg={8}>
+      <Col className="px-5 row-col-color-2 " xs={12} sm={12} md={12} lg={8}>
         <Main />
       </Col>
     </Row>
