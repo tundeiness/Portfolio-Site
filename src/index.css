@@ -74,6 +74,25 @@ code {
 
 }
 
+.header{
+  text-align: right;
+  background: #1F1815;
+  background-attachment: scroll;
+  background-position: top left, center center;
+  background-size: auto, cover;
+  background-image: url(https://user-images.githubusercontent.com/25479050/85929387-374e8580-b8ac-11ea-8824-01ef6909d58a.png), url(https://user-images.githubusercontent.com/25479050/85928869-43d0df00-b8a8-11ea-842a-fc131cd27956.jpg);
+  background-repeat: repeat, no-repeat;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .copyright {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8em;
+  list-style: none;
+  margin: 1em 0 0 0;
+}
+
 
 
 .row-inner{
@@ -225,3 +244,14 @@ strong{
 #footer{}
 
 .footer-inner{}
+
+.icons{
+  margin-top: 1em;
+}
+
+ul.icons{
+
+  list-style: none;
+}
+
+
