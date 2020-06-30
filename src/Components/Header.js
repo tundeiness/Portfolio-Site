@@ -12,7 +12,7 @@ const Header = () => (
           <img src="https://user-images.githubusercontent.com/25479050/85928866-43384880-b8a8-11ea-89ab-9d42b1ae286d.jpg" alt="avatar-name" />
         </a>
       </Col>
-      <Col className="d-flex justify-content-xs-center   justify-content-sm-center justify-content-md-center justify-content-lg-end" xs={12}>
+      <Col className="d-flex justify-content-center   justify-content-sm-center justify-content-md-center justify-content-lg-end" xs={12}>
         <h1 className="d-lg-inline d-xs-inline d-sm-inline">
           <strong>I am Strata</strong>
           , a super simple
