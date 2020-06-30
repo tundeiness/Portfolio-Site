@@ -54,6 +54,7 @@ code {
 }
 
 .cont-row{
+  position: relative;
   /* min-height: 100vh; */
   /* overflow-y: hidden; */
 }
@@ -73,7 +74,8 @@ code {
   /* overflow: hidden; */
   text-align: center;
   min-height: 100vh;
-  /* position: fixed !important; */
+  /* position: fixed !important;
+  margin-left: -33.4%; */
   /* flex: 0 0 auto; */
   /* position: fixed !important;
   z-index: 1000000; */
@@ -141,7 +143,11 @@ strong{
 
 .row-col-color-2{
   background: #ee6352;
-  overflow-y: auto;
+  overflow-y: scroll;
+  max-height: 100vh;
+  /* margin-left: 33%;
+  padding: 6em 3em 3em 3em;
+  width: calc(100% - 33%); */
   /* overflow: auto;
   position: relative;
   left:13em; */
