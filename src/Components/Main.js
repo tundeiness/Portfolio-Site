@@ -33,6 +33,15 @@ const Main = () => (
       <Row className="flex-lg-wrap justify-content-lg-around">
         <Col className="project-item" xs={12} lg="6">
           1 of 4
+          <Card>
+            <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928808-c5743d00-b8a7-11ea-9439-22df26f8e4c4.jpg" />
+            <Card.Body>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </Card.Text>
+            </Card.Body>
+          </Card>
         </Col>
         <Col className="project-item" xs={12} lg="6">
           2 of 4
