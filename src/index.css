@@ -161,7 +161,25 @@ strong{
   left: 28.1em; */
 }
 
+@media (min-width: 576px) {
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
 @media screen and (max-width: 768px){
+
+  html{
+    overflow-y: scroll;
+  }
+
   .row-col-color-2 {
       /* font-size: 1.75em; */
       overflow-y: visible;
@@ -172,6 +190,11 @@ strong{
 }
 
 @media screen and (max-width: 992px){
+
+  html{
+    overflow-y: scroll !important;
+  }
+
   .row-col-color-2 {
       /* font-size: 1.75em; */
       /* overflow-y: visible; */
@@ -183,10 +206,12 @@ strong{
 }
 
 @media screen and (max-width: 1200px){
+  html{
+    overflow-y: hidden;
+  }
   .row-inner{
     /* border: 1px solid black;
     margin-top: 5em; */
-
   }
 
   .row-col-color-1 {
@@ -345,4 +370,33 @@ ul.icons{
   list-style: none;
 }
 
+/* Section two */
 
+.project-item{
+
+}
+
+.project-item-card{
+
+}
+
+.project-item-card:hover{
+ opacity: 0.3;
+}
+
+
+.project-item-card{
+  transition: 1s ease-in-out;
+ }
+/* .project-item-card:hover{
+
+} */
+
+
+
+
+
+
+.project-button{
+
+}
