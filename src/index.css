@@ -274,7 +274,8 @@ strong{
 .button:hover{
   text-decoration: none;
   color: #49bf9d;
-  background-color: none;
+  background: none !important;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 /* .main-button > .button:hover{
@@ -289,6 +290,7 @@ strong{
 #next {
   margin-top: 4em;
   padding-top: 4em;
+  border-top: solid 2px #a2a2a2;
 }
 
 /* Section three Form */
@@ -311,12 +313,12 @@ strong{
   font-size: 1.5em;
   line-height: 1.5em;
   color: #787878;
-    font-weight: 400;
-    line-height: 1em;
+  font-weight: 400;
+  line-height: 1em;
     /* margin: 0 0 1em 0; */
     /* margin-top: 0px;
     margin-right: 0px; */
-    margin-bottom: 1em;
+  margin-bottom: 1em;
     /* margin-left: 0px; */
 }
 

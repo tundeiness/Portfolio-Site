@@ -22,12 +22,12 @@ const Main = () => (
         <p>
           Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
         </p>
-        <Button variant="light" className="main-button">
+        <Button className="main-button">
           <a href="#" className="button">Learn More</a>
         </Button>
       </section>
     </Col>
-    <Col className="border-top" id="next">Section two</Col>
+    <Col className="section-two" id="next">Section two</Col>
     <Col className="main-col-three" id="next-form">
       <section id="three">
         {/* <h2>Get In Touch</h2>
