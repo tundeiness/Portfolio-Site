@@ -35,12 +35,12 @@ const Main = () => (
           1 of 4
           <Card>
             <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928808-c5743d00-b8a7-11ea-9439-22df26f8e4c4.jpg" />
-            <Card.Body>
+            {/* <Card.Body>
+              <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk
-                of the card&#39;s content.
+                Some quick example text to build on the card title and the card&#39;s content.
               </Card.Text>
-            </Card.Body>
+            </Card.Body> */}
           </Card>
         </Col>
         <Col className="project-item" xs={12} lg="6">
