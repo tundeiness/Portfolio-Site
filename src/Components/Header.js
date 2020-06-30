@@ -12,8 +12,8 @@ const Header = () => (
           <img src="https://user-images.githubusercontent.com/25479050/85928866-43384880-b8a8-11ea-89ab-9d42b1ae286d.jpg" alt="avatar-name" />
         </a>
       </Col>
-      <Col xs={12}>
-        <h1>
+      <Col className="d-flex justify-content-lg-end" xs={12}>
+        <h1 className="d-lg-inline">
           <strong>I am Strata</strong>
           , a super simple
           <br />
