@@ -377,16 +377,31 @@ ul.icons{
 }
 
 .project-item-card{
-
+  position: relative;
 }
+
+.project-item-card Button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ }
 
 .project-item-card:hover{
  opacity: 0.3;
 }
 
 
-.project-item-card{
-  transition: 1s ease-in-out;
+.project-item-card {
+transition: all  2s ease-in-out;
+/* filter: grayscale(100%); */
+ }
+
+ .project-item-card Button{
+  transform: translate(-10%, -10%) scale(0);
+ }
+
+ .project-item-card:hover Button{
+  transform: translate(-50%, -50%) scale(1);
  }
 /* .project-item-card:hover{
 
