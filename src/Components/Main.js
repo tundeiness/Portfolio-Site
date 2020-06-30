@@ -27,7 +27,24 @@ const Main = () => (
         </Button>
       </section>
     </Col>
-    <Col className="section-two" id="next">Section two</Col>
+
+    <Col className="section-two" id="next">
+      <Row className="flex-lg-wrap justify-content-lg-around">
+        <Col xs lg="3">
+          1 of 4
+        </Col>
+        <Col xs lg="3">
+          2 of 4
+        </Col>
+        <Col xs lg="3">
+          3 of 4
+        </Col>
+        <Col xs lg="3">
+          4 of 4
+        </Col>
+      </Row>
+    </Col>
+
     <Col className="main-col-three" id="next-form">
       <section id="three">
         {/* <h2>Get In Touch</h2>
