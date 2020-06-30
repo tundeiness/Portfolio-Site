@@ -30,16 +30,16 @@ const Main = () => (
 
     <Col className="section-two" id="next">
       <Row className="flex-lg-wrap justify-content-lg-around">
-        <Col xs lg="3">
+        <Col className="project-item" xs={12} lg="6">
           1 of 4
         </Col>
-        <Col xs lg="3">
+        <Col className="project-item" xs={12} lg="6">
           2 of 4
         </Col>
-        <Col xs lg="3">
+        <Col className="project-item" xs={12} lg="6">
           3 of 4
         </Col>
-        <Col xs lg="3">
+        <Col className="project-item" xs={12} lg="6">
           4 of 4
         </Col>
       </Row>
