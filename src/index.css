@@ -54,9 +54,10 @@ code {
 }
 
 .cont-row{
-  position: relative;
+  /* position: relative; */
   /* min-height: 100vh; */
   /* overflow-y: hidden; */
+  /* width: 100%; */
 }
 
 .cont-color{
@@ -144,7 +145,10 @@ strong{
 .row-col-color-2{
   background: #ee6352;
   overflow-y: scroll;
+  /* overflow-y: visible; */
+  /* overscroll-behavior-y: scroll; */
   max-height: 100vh;
+
   /* margin-left: 33%;
   padding: 6em 3em 3em 3em;
   width: calc(100% - 33%); */
@@ -156,6 +160,27 @@ strong{
   /* position: relative !important;
   left: 28.1em; */
 }
+
+@media screen and (max-width: 768px){
+  .row-col-color-2 {
+      /* font-size: 1.75em; */
+      overflow-y: visible;
+      max-height: 100%;
+      /* min-height: 100%; */
+
+  }
+}
+
+@media screen and (max-width: 992px){
+  .row-col-color-2 {
+      /* font-size: 1.75em; */
+      /* overflow-y: visible; */
+      /* height: 100%; */
+      /* min-width: 100%; */
+  }
+}
+
+
 
 /* .test{
   overflow: hidden;
