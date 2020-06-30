@@ -38,7 +38,7 @@ const Main = () => (
             <Card.Body>
               <Card.Text>
                 Some quick example text to build on the card title and make up the bulk
-                of the card's content.
+                of the card&#39;s content.
               </Card.Text>
             </Card.Body>
           </Card>
