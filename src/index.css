@@ -283,6 +283,11 @@ strong{
 
 .main-button:hover{
   border: 3px solid #49bf9d !important;
+  color: #49bf9d !important;
+}
+
+.main-button:hover .button{
+  color: #49bf9d !important;
 }
 
 .button{
