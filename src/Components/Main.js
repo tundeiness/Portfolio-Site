@@ -16,36 +16,35 @@ class Main extends React.Component {
     super(props);
     this.state = {
       show: false,
-      isOpen: false,
       repositories: [
         {
           id: 1,
-          title: 'Welcome!',
-          imageLink: 'Projects that showcases skills',
+          title: 'Escape',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/85928844-1b48e500-b8a8-11ea-8720-9665d4590d9e.jpg',
           description: 'feel free to check `em out',
           liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
           github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
         },
         {
           id: 2,
-          title: 'Welcome!',
-          imageLink: 'Projects that showcases skills',
+          title: 'Rom Dom!',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/85928845-1d12a880-b8a8-11ea-992e-637fe65e6404.jpg',
           description: 'feel free to check `em out',
           liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
           github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
         },
         {
           id: 3,
-          title: 'Welcome!',
-          imageLink: 'Projects that showcases skills',
+          title: 'Pixie pie',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/85928846-1dab3f00-b8a8-11ea-9028-b20a96226a3e.jpg',
           description: 'feel free to check `em out',
           liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
           github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
         },
         {
           id: 4,
-          title: 'Welcome!',
-          imageLink: 'Projects that showcases skills',
+          title: 'Ghost Daddy',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/85928848-1e43d580-b8a8-11ea-9ea0-f9a728680a8c.jpg',
           description: 'feel free to check `em out',
           liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
           github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
@@ -66,7 +65,7 @@ class Main extends React.Component {
   }
 
   render() {
-    const { show, isOpen, repositories } = this.state;
+    const { show, repositories } = this.state;
     return (
       <>
         <Row className="flex-column">
@@ -93,7 +92,7 @@ class Main extends React.Component {
               <Col className="project-item" xs={12} lg="6">
                 1 of 4
                 <Card className="project-item-card">
-                  <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928808-c5743d00-b8a7-11ea-9439-22df26f8e4c4.jpg" />
+                  <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928844-1b48e500-b8a8-11ea-8720-9665d4590d9e.jpg" />
                   <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
                   {/* <Card.Body>
               <Card.Title>Special title treatment</Card.Title>
