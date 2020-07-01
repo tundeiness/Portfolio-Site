@@ -86,7 +86,7 @@ class Main extends React.Component {
               1 of 4
               <Card className="project-item-card">
                 <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928808-c5743d00-b8a7-11ea-9439-22df26f8e4c4.jpg" />
-                <Button className="d-inline-block project-button">View</Button>
+                <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
                 {/* <Card.Body>
               <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
