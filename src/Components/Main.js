@@ -67,8 +67,8 @@ class Main extends React.Component {
   render() {
     const { show, repositories } = this.state;
     const Repo = repositories.map(data => (
-      <Col className="project-item" xs={12} lg="6">
-        <Card className="project-item-card mb-4">
+      <Col className="project-item mb-4" xs={12} lg="6">
+        <Card className="project-item-card ">
           <Card.Img variant="top" src={data.imageLink} />
           <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
         </Card>
