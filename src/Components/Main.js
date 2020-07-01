@@ -14,6 +14,36 @@ class Main extends React.Component {
     super(props);
     this.state = {
       show: false,
+      repositories: [
+        {
+          title: 'Welcome!',
+          imageLink: 'Projects that showcases skills',
+          description: 'feel free to check `em out',
+          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+        },
+        {
+          title: 'Welcome!',
+          imageLink: 'Projects that showcases skills',
+          description: 'feel free to check `em out',
+          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+        },
+        {
+          title: 'Welcome!',
+          imageLink: 'Projects that showcases skills',
+          description: 'feel free to check `em out',
+          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+        },
+        {
+          title: 'Welcome!',
+          imageLink: 'Projects that showcases skills',
+          description: 'feel free to check `em out',
+          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+        },
+      ],
     };
 
     this.showModal = this.showModal.bind(this);
@@ -29,6 +59,7 @@ class Main extends React.Component {
   }
 
   render() {
+    const { show } = this.state;
     return (
       <Row className="flex-column">
         <Col className="main-col-one" id="About">
