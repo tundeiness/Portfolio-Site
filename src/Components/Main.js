@@ -6,14 +6,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Modal from 'react-bootstrap/Modal';
 
 import Contact from '../pages/Contact';
+// import Modal from './Modal';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       show: false,
+      isOpen: false,
       repositories: [
         {
           id: 1,
@@ -63,63 +66,64 @@ class Main extends React.Component {
   }
 
   render() {
-    const { show } = this.state;
+    const { show, isOpen, repositories } = this.state;
     return (
-      <Row className="flex-column">
-        <Col className="main-col-one" id="About">
-          <section id="one">
-            <header className="major">
-              <h2>
-                Ipsum lorem dolor aliquam ante commodo
-                <br />
-                magna sed accumsan arcu neque.
-              </h2>
-            </header>
-            <p>
-              Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
-            </p>
-            <Button className="main-button">
-              <a href="#" className="button">Learn More</a>
-            </Button>
-          </section>
-        </Col>
+      <>
+        <Row className="flex-column">
+          <Col className="main-col-one" id="About">
+            <section id="one">
+              <header className="major">
+                <h2>
+                  Ipsum lorem dolor aliquam ante commodo
+                  <br />
+                  magna sed accumsan arcu neque.
+                </h2>
+              </header>
+              <p>
+                Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+              </p>
+              <Button className="main-button">
+                <a href="#" className="button">Learn More</a>
+              </Button>
+            </section>
+          </Col>
 
-        <Col className="section-two" id="next">
-          <Row className="flex-lg-wrap justify-content-lg-around">
-            <Col className="project-item" xs={12} lg="6">
-              1 of 4
-              <Card className="project-item-card">
-                <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928808-c5743d00-b8a7-11ea-9439-22df26f8e4c4.jpg" />
-                <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
-                {/* <Card.Body>
+          <Col className="section-two" id="next">
+            <Row className="flex-lg-wrap justify-content-lg-around">
+              <Col className="project-item" xs={12} lg="6">
+                1 of 4
+                <Card className="project-item-card">
+                  <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928808-c5743d00-b8a7-11ea-9439-22df26f8e4c4.jpg" />
+                  <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
+                  {/* <Card.Body>
               <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and the card&#39;s content.
               </Card.Text>
             </Card.Body> */}
-              </Card>
-            </Col>
-            <Col className="project-item" xs={12} lg="6">
-              2 of 4
-            </Col>
-            <Col className="project-item" xs={12} lg="6">
-              3 of 4
-            </Col>
-            <Col className="project-item" xs={12} lg="6">
-              4 of 4
-            </Col>
-          </Row>
-        </Col>
+                </Card>
+              </Col>
+              <Col className="project-item" xs={12} lg="6">
+                2 of 4
+              </Col>
+              <Col className="project-item" xs={12} lg="6">
+                3 of 4
+              </Col>
+              <Col className="project-item" xs={12} lg="6">
+                4 of 4
+              </Col>
+            </Row>
+          </Col>
 
-        <Col className="main-col-three" id="next-form">
-          <section id="three">
-            {/* <h2>Get In Touch</h2>
+          <Col className="main-col-three" id="next-form">
+            <section id="three">
+              {/* <h2>Get In Touch</h2>
         <p>
           Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
         </p> */}
-            <div className="row">
-              <Contact />
-              {/* <div className="col-8 col-12-small">
+              <div className="row">
+                <Contact />
+                {/* <div className="col-8 col-12-small">
             <form method="post" action="#">
               <div className="row gtr-uniform gtr-50">
                 <div className="col-6 col-12-xsmall">
@@ -138,7 +142,7 @@ class Main extends React.Component {
             </ul>
           </div> */}
 
-              {/* <div className="col-4 col-12-small">
+                {/* <div className="col-4 col-12-small">
             <ul className="labeled-icons">
               <li>
                 <h3 className="icon solid fa-home"><span className="label">Address</span></h3>
@@ -162,11 +166,31 @@ class Main extends React.Component {
               </li>
             </ul>
           </div> */}
-            </div>
-          </section>
-        </Col>
-        <Col>Footer</Col>
-      </Row>
+              </div>
+            </section>
+          </Col>
+          <Col>Footer</Col>
+        </Row>
+        {/* <Modal show={show} repo={repositories} /> */}
+        <Modal size="lg" centered show={show}>
+          <Modal.Header closeButton>
+            <Modal.Title id="contained-modal-title-vcenter">
+              Modal heading
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Centered Modal</h4>
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+              consectetur ac, vestibulum at eros.
+            </p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.hideModal}>Close</Button>
+          </Modal.Footer>
+        </Modal>
+      </>
     );
   }
 }
