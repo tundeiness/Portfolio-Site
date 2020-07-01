@@ -66,6 +66,14 @@ class Main extends React.Component {
 
   render() {
     const { show, repositories } = this.state;
+    const Repo = repositories.map(data => (
+      <Col className="project-item" xs={12} lg="6">
+        <Card className="project-item-card mb-4">
+          <Card.Img variant="top" src={data.imageLink} />
+          <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
+        </Card>
+      </Col>
+    ));
     return (
       <>
         <Row className="flex-column">
@@ -89,20 +97,21 @@ class Main extends React.Component {
 
           <Col className="section-two" id="next">
             <Row className="flex-lg-wrap justify-content-lg-around">
-              <Col className="project-item" xs={12} lg="6">
+              {Repo}
+              {/* <Col className="project-item" xs={12} lg="6">
                 1 of 4
                 <Card className="project-item-card">
                   <Card.Img variant="top" src="https://user-images.githubusercontent.com/25479050/85928844-1b48e500-b8a8-11ea-8720-9665d4590d9e.jpg" />
                   <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
-                  {/* <Card.Body>
-              <Card.Title>Special title treatment</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and the card&#39;s content.
-              </Card.Text>
-            </Card.Body> */}
+                  <Card.Body>
+                    <Card.Title>Special title treatment</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and the card&#39;s content.
+                    </Card.Text>
+                  </Card.Body>
                 </Card>
-              </Col>
-              <Col className="project-item" xs={12} lg="6">
+              </Col> */}
+              {/* <Col className="project-item" xs={12} lg="6">
                 2 of 4
               </Col>
               <Col className="project-item" xs={12} lg="6">
@@ -110,7 +119,7 @@ class Main extends React.Component {
               </Col>
               <Col className="project-item" xs={12} lg="6">
                 4 of 4
-              </Col>
+              </Col> */}
             </Row>
           </Col>
 
