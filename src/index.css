@@ -169,7 +169,11 @@ strong{
 @media (min-width: 768px) {  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+  html{
+    overflow-y: hidden !important;
+  }
+ }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
@@ -196,6 +200,8 @@ strong{
   }
 
   .row-col-color-2 {
+    max-height: 100%;
+    overflow-y: hidden;
       /* font-size: 1.75em; */
       /* overflow-y: visible; */
       /* height: 100%; */
