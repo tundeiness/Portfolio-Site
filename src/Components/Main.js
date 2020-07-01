@@ -16,6 +16,7 @@ class Main extends React.Component {
     super(props);
     this.state = {
       show: false,
+      buttonId: '',
       repositories: [
         {
           id: 1,
@@ -56,9 +57,12 @@ class Main extends React.Component {
     this.hideModal = this.hideModal.bind(this);
   }
 
-  showModal() {
+  showModal(event) {
+    // const {event} = target
+    console.log(event.target.id);
     this.setState({
       show: true,
+      buttonId: event.target.id,
     });
   }
 
@@ -69,10 +73,10 @@ class Main extends React.Component {
   render() {
     const { show, repositories } = this.state;
     const Repo = repositories.map(data => (
-      <Col className="project-item mb-4" xs={12} lg="6">
+      <Col className="project-item mb-4" xs={12} lg="6" key={`${data.id}`}>
         <Card className="project-item-card ">
           <Card.Img variant="top" src={data.imageLink} />
-          <Button className="d-inline-block project-button" key={`${data.id}`} onClick={this.showModal}>View</Button>
+          <Button className="d-inline-block project-button" id={`${data.id}`} key={`${data.id}`} onClick={this.showModal}>View</Button>
         </Card>
       </Col>
     ));
