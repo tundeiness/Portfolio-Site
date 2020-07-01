@@ -59,8 +59,6 @@ class Main extends React.Component {
   showModal() {
     this.setState({
       show: true,
-      // repositories:
-      // repositories: repositories[id][title, imageLink, description, liveLink, github],
     });
   }
 
@@ -74,7 +72,7 @@ class Main extends React.Component {
       <Col className="project-item mb-4" xs={12} lg="6">
         <Card className="project-item-card ">
           <Card.Img variant="top" src={data.imageLink} />
-          <Button className="d-inline-block project-button" onClick={this.showModal}>View</Button>
+          <Button className="d-inline-block project-button" key={`${data.id}`} onClick={this.showModal}>View</Button>
         </Card>
       </Col>
     ));
@@ -184,16 +182,15 @@ class Main extends React.Component {
           <Col>Footer</Col>
         </Row>
         {/* <Modal show={show} repo={repositories} /> */}
-
         <Modal size="lg" centered show={show}>
           <Modal.Header closeButton onClick={this.hideModal}>
             <Modal.Title id="contained-modal-title-vcenter">
-              Modal heading
-              {/* {repositories.map(data => <p>{data.title}</p>)} */}
+              Project Name
+              {/* {repositories.title} */}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>Centered Modal</h4>
+            <h4>Project Name</h4>
             <p>
               Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
               dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -204,6 +201,7 @@ class Main extends React.Component {
             <Button onClick={this.hideModal}>Close</Button>
           </Modal.Footer>
         </Modal>
+
       </>
     );
   }
