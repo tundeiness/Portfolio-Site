@@ -58,7 +58,6 @@ class Main extends React.Component {
   }
 
   showModal(event) {
-    // const {event} = target
     console.log(event.target.id);
     this.setState({
       show: true,
@@ -71,7 +70,7 @@ class Main extends React.Component {
   }
 
   render() {
-    const { show, repositories } = this.state;
+    const { show, repositories, buttonId } = this.state;
     const Repo = repositories.map(data => (
       <Col className="project-item mb-4" xs={12} lg="6" key={`${data.id}`}>
         <Card className="project-item-card ">
@@ -80,6 +79,31 @@ class Main extends React.Component {
         </Card>
       </Col>
     ));
+
+    const Mode = repositories.map(data => (
+      <Modal size="lg" centered show={show} key={`${data.id}`}>
+        <Modal.Header closeButton onClick={this.hideModal}>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {/* Project Name */}
+            {/* {repositories.title} */}
+            {/* {buttonId === data.id && 'Project Name'} */}
+            {buttonId === data.id ? data.title : 'default name'}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Project Name</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={this.hideModal}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    ));
+
     return (
       <>
         <Row className="flex-column">
@@ -186,25 +210,7 @@ class Main extends React.Component {
           <Col>Footer</Col>
         </Row>
         {/* <Modal show={show} repo={repositories} /> */}
-        <Modal size="lg" centered show={show}>
-          <Modal.Header closeButton onClick={this.hideModal}>
-            <Modal.Title id="contained-modal-title-vcenter">
-              Project Name
-              {/* {repositories.title} */}
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h4>Project Name</h4>
-            <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
-            </p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.hideModal}>Close</Button>
-          </Modal.Footer>
-        </Modal>
+        {Mode}
 
       </>
     );
