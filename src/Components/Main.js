@@ -16,6 +16,7 @@ class Main extends React.Component {
       show: false,
       repositories: [
         {
+          id: 1,
           title: 'Welcome!',
           imageLink: 'Projects that showcases skills',
           description: 'feel free to check `em out',
@@ -23,6 +24,7 @@ class Main extends React.Component {
           github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
         },
         {
+          id: 2,
           title: 'Welcome!',
           imageLink: 'Projects that showcases skills',
           description: 'feel free to check `em out',
@@ -30,6 +32,7 @@ class Main extends React.Component {
           github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
         },
         {
+          id: 3,
           title: 'Welcome!',
           imageLink: 'Projects that showcases skills',
           description: 'feel free to check `em out',
@@ -37,6 +40,7 @@ class Main extends React.Component {
           github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
         },
         {
+          id: 4,
           title: 'Welcome!',
           imageLink: 'Projects that showcases skills',
           description: 'feel free to check `em out',
