@@ -172,8 +172,9 @@ class Main extends React.Component {
           <Col>Footer</Col>
         </Row>
         {/* <Modal show={show} repo={repositories} /> */}
+
         <Modal size="lg" centered show={show}>
-          <Modal.Header closeButton>
+          <Modal.Header closeButton onClick={this.hideModal}>
             <Modal.Title id="contained-modal-title-vcenter">
               Modal heading
             </Modal.Title>
