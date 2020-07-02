@@ -7,12 +7,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
-import Card  from 'react-bootstrap/Card';
-
 
 import Contact from '../pages/Contact';
 // import Modal from './Modal';
-
 
 class Main extends React.Component {
   constructor(props) {
@@ -208,6 +205,15 @@ class Main extends React.Component {
             <Modal.Body>
               <h4>{data.title}</h4>
               <p>{data.description}</p>
+              <Card>
+                <Card.Img variant="top" src={data.imageLink} />
+                <Card.Body>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk
+                    of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.hideModal}>Close</Button>
