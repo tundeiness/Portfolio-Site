@@ -16,7 +16,7 @@ class Main extends React.Component {
     super(props);
     this.state = {
       show: false,
-      buttonId: '',
+      buttonId: 0,
       repositories: [
         {
           id: 1,
@@ -58,10 +58,10 @@ class Main extends React.Component {
   }
 
   showModal(event) {
-    console.log(event.target.id);
+    console.log(Number(event.target.id));
     this.setState({
       show: true,
-      buttonId: event.target.id,
+      buttonId: Number(event.target.id),
     });
   }
 
@@ -87,11 +87,12 @@ class Main extends React.Component {
             {/* Project Name */}
             {/* {repositories.title} */}
             {/* {buttonId === data.id && 'Project Name'} */}
-            {buttonId === data.id ? data.title : 'default name'}
+            {/* {buttonId === data.id ? data.title : 'default name'} */}
+            {buttonId === data.id && data.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Project Name</h4>
+          <h4>{buttonId === data.id ? data.title : 'default name'}</h4>
           <p>
             Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
             dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
