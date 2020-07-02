@@ -219,7 +219,7 @@ class Main extends React.Component {
               <Row>
                 <Col className="pl-0" lg={12}>
                   <Button className="live"><a href="#" className="modal-live-button">Live</a></Button>
-                  <Button className="github ml-lg-1"><a href="#" className="modal-Github-button">Github</a></Button>
+                  <Button className="github ml-1"><a href="#" className="modal-Github-button">Github</a></Button>
                 </Col>
               </Row>
               <Button onClick={this.hideModal}>Close</Button>
