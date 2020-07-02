@@ -2,15 +2,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
+import Card  from 'react-bootstrap/Card';
+
 
 import Contact from '../pages/Contact';
 // import Modal from './Modal';
+
 
 class Main extends React.Component {
   constructor(props) {
@@ -56,9 +58,7 @@ class Main extends React.Component {
 
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
-
   }
-
 
   showModal(event) {
     this.setState({
@@ -207,9 +207,7 @@ class Main extends React.Component {
             </Modal.Header>
             <Modal.Body>
               <h4>{data.title}</h4>
-              <p>
-                {data.description}
-              </p>
+              <p>{data.description}</p>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.hideModal}>Close</Button>
