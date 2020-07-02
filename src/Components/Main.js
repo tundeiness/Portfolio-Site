@@ -8,10 +8,12 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import Contact from '../pages/Contact';
 // import Modal from './Modal';
 
+const Coffee = <FontAwesomeIcon icon={faCoffee} />;
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -219,8 +221,16 @@ class Main extends React.Component {
             <Modal.Footer className="justify-content-lg-between">
               <Row>
                 <Col className="pl-0" lg={12}>
-                  <Button className="live"><a href="#" className="modal-live-button">Live</a></Button>
-                  <Button className="github ml-1"><a href="#" className="modal-Github-button">Github</a></Button>
+                  <Button className="live">
+                    <a href="#" className="modal-live-button">
+                      <FontAwesomeIcon icon={faCoffee} />
+                    </a>
+                  </Button>
+                  <Button className="github ml-1">
+                    <a href="#" className="modal-Github-button">
+                      Github
+                    </a>
+                  </Button>
                 </Col>
               </Row>
               <Button onClick={this.hideModal}>Close</Button>
