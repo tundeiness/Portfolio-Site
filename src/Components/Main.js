@@ -218,8 +218,8 @@ class Main extends React.Component {
             <Modal.Footer className="justify-content-lg-between">
               <Row>
                 <Col className="pl-0" lg={12}>
-                  <Button className="live"><a href="#" className="modal-live-button">Live Link</a></Button>
-                  <Button className="github ml-lg-1"><a href="#" className="modal-Github-button">Github Link</a></Button>
+                  <Button className="live"><a href="#" className="modal-live-button">Live</a></Button>
+                  <Button className="github ml-lg-1"><a href="#" className="modal-Github-button">Github</a></Button>
                 </Col>
               </Row>
               <Button onClick={this.hideModal}>Close</Button>
