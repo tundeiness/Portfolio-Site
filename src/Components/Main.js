@@ -217,7 +217,7 @@ class Main extends React.Component {
             </Modal.Body>
             <Modal.Footer className="justify-content-lg-between">
               <Row>
-                <Col lg={12}>
+                <Col className="pl-0" lg={12}>
                   <Button className="live"><a href="#" className="modal-live-button">Live Link</a></Button>
                   <Button className="github ml-lg-1"><a href="#" className="modal-Github-button">Github Link</a></Button>
                 </Col>
