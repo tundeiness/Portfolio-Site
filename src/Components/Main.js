@@ -9,6 +9,7 @@ import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import '../fontawesome';
 
 import Contact from '../pages/Contact';
 // import Modal from './Modal';
