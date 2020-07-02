@@ -215,8 +215,13 @@ class Main extends React.Component {
                 </Card.Body> */}
               </Card>
             </Modal.Body>
-            <Modal.Footer>
-              <Button><a href="#" className="modal-live-button">Live Link</a></Button>
+            <Modal.Footer className="justify-content-lg-between">
+              <Row>
+                <Col lg={12}>
+                  <Button className="live"><a href="#" className="modal-live-button">Live Link</a></Button>
+                  <Button className="github ml-1"><a href="#" className="modal-Github-button">Github Link</a></Button>
+                </Col>
+              </Row>
               <Button onClick={this.hideModal}>Close</Button>
             </Modal.Footer>
           </Modal>
