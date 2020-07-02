@@ -56,36 +56,11 @@ class Main extends React.Component {
 
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
-    this.updateButton = this.updateButton.bind(this);
-    // this.fetchData = this.fetchData.bind(this);
+
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   const { buttonId } = this.state;
-  //   if (prevState.buttonId !== buttonId) {
-  //     console.log('state has changed.');
-  //     // buttonId: Number(event.target.id),
-  //     this.fetchData(buttonId);
-  //   }
-  // }
-
-  // fetchData(client) {
-  //   setTimeout(() => {
-  //     this.setState({
-  //       buttonId: client,
-  //     });
-  //   }, 1);
-  // }
-
-  updateButton() {
-    // this.setState({ buttonId: id });
-    this.forceUpdate();
-  }
 
   showModal(event) {
-    console.log(event.target.id);
-    // const { showModal } = this.props;
-    // const { buttonId } = this.state;
     this.setState({
       show: true,
       buttonId: Number(event.target.id),
@@ -98,8 +73,7 @@ class Main extends React.Component {
 
   render() {
     const { show, repositories, buttonId } = this.state;
-    console.log('data =>', repositories);
-    console.log('button =>', buttonId);
+
     const Repo = repositories.map(data => (
       <Col className="project-item mb-4" xs={12} lg="6" key={`${data.id}`}>
         <Card className="project-item-card ">
@@ -118,31 +92,6 @@ class Main extends React.Component {
       return null;
     });
     console.log('filtering =>', filtered);
-
-    // const Mode = repositories.map(data => (
-    //   <Modal size="lg" centered show={show} key={`${data.id}`}>
-    //     <Modal.Header closeButton onClick={this.hideModal}>
-    //       <Modal.Title id="contained-modal-title-vcenter">
-    //         {/* Project Name */}
-    //         {/* {repositories.title} */}
-    //         {/* {buttonId === data.id && 'Project Name'} */}
-    //         {/* {buttonId === data.id ? data.title : 'default name'} */}
-    //         {buttonId === data.id ? data.title : 'default name'}
-    //       </Modal.Title>
-    //     </Modal.Header>
-    //     <Modal.Body>
-    //       <h4>{buttonId === data.id ? data.title : 'default name'}</h4>
-    //       <p>
-    //         Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-    //         dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-    //         consectetur ac, vestibulum at eros.
-    //       </p>
-    //     </Modal.Body>
-    //     <Modal.Footer>
-    //       <Button onClick={this.hideModal}>Close</Button>
-    //     </Modal.Footer>
-    //   </Modal>
-    // ));
 
     return (
       <>
@@ -249,26 +198,17 @@ class Main extends React.Component {
           </Col>
           <Col>Footer</Col>
         </Row>
-        {/* <Modal show={show} repo={repositories} /> */}
-        {/* {Mode} */}
         {filtered.map(data => (
           <Modal size="lg" centered show={show} key={`${data.id}`}>
             <Modal.Header closeButton onClick={this.hideModal}>
               <Modal.Title id="contained-modal-title-vcenter">
-                {/* Project Name */}
-                {/* {repositories.title} */}
-                {/* {buttonId === data.id && 'Project Name'} */}
-                {/* {buttonId === data.id ? data.title : 'default name'} */}
-                {/* {buttonId === data.id ? data.title : 'default name'} */}
                 {data.title}
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <h4>{data.title}</h4>
               <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                consectetur ac, vestibulum at eros.
+                {data.description}
               </p>
             </Modal.Body>
             <Modal.Footer>
