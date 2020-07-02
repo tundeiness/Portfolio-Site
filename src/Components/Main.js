@@ -14,6 +14,8 @@ import Contact from '../pages/Contact';
 // import Modal from './Modal';
 
 const Coffee = <FontAwesomeIcon icon={faCoffee} />;
+
+const github = <FontAwesomeIcon icon={['fab', 'github']} />;
 class Main extends React.Component {
   constructor(props) {
     super(props);
