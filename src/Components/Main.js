@@ -14,9 +14,10 @@ import '../fontawesome';
 import Contact from '../pages/Contact';
 // import Modal from './Modal';
 
-const Coffee = <FontAwesomeIcon icon={faCoffee} />;
+// const Coffee = <FontAwesomeIcon icon={faCoffee} />;
 
-const github = <FontAwesomeIcon icon={['fab', 'github']} />;
+// const github = <FontAwesomeIcon icon={faGithubAlt} />;
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -226,12 +227,13 @@ class Main extends React.Component {
                 <Col className="pl-0" lg={12}>
                   <Button className="live">
                     <a href="#" className="modal-live-button">
-                      <FontAwesomeIcon icon={faCoffee} />
+                      Live
                     </a>
                   </Button>
                   <Button className="github ml-1">
                     <a href="#" className="modal-Github-button">
-                      Github
+                      <FontAwesomeIcon icon={['fab', 'github']} style={{ color: 'white' }} size="2.5x" />
+                      ;
                     </a>
                   </Button>
                 </Col>
