@@ -90,6 +90,27 @@ font-family: 'Roboto Slab', serif; */
   /* margin-bottom: .2em; */
 }
 
+.section-three > h2{
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 900 !important;
+  font-size: 5em !important;
+  /* margin-bottom: .1em; */
+  color: #787878;
+  line-height: 1.5em;
+}
+
+.section-three > p{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1.2em !important;
+  color: #a2a2a2;
+}
+
+form > .form-group > .form-label{
+  color: #a2a2a2 !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 .cont-row{
   /* position: relative; */
   /* min-height: 100vh; */
