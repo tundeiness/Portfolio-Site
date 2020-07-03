@@ -107,7 +107,7 @@ code {
 
 
 .row-inner{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 5em;
 }
 
@@ -447,15 +447,17 @@ transition: all  2s ease-in-out;
    background-color: #49bf9d !important;
    border: none !important;
  }
-/* .project-item-card:hover{
 
-} */
+ /* Modal */
 
+ .live{
+  /* color: #fff !important; */
+ }
 
+ .live > .modal-live-button{
+    color: #ffffff !important;
+ }
 
-
-
-
-.project-button{
+ .modal-live-button{
 
 }
