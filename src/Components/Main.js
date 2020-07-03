@@ -109,9 +109,9 @@ class Main extends React.Component {
               <p>
                 Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
               </p>
-              <Button className="main-button bg-transparent">
+              {/* <Button className="main-button bg-transparent">
                 <a href="#" className="button">Learn More</a>
-              </Button>
+              </Button> */}
             </section>
           </Col>
 
@@ -237,7 +237,6 @@ class Main extends React.Component {
             </Modal.Footer>
           </Modal>
         ))}
-        ;
       </>
     );
   }

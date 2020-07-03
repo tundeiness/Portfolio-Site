@@ -64,7 +64,7 @@ font-family: 'Roboto Slab', serif; */
 .major > h2{
   font-family: 'Roboto Slab', serif !important;
   font-weight: 900 !important;
-  font-size: 5em !important;
+  font-size: 3em !important;
 }
 
 #one > p{
@@ -76,7 +76,7 @@ font-family: 'Roboto Slab', serif; */
 #next > h2{
   font-family: 'Roboto Slab', serif !important;
   font-weight: 900 !important;
-  font-size: 5em !important;
+  font-size: 3em !important;
   /* margin-bottom: .1em; */
   color: #787878;
   line-height: 1.5em;
@@ -93,7 +93,7 @@ font-family: 'Roboto Slab', serif; */
 .section-three > h2{
   font-family: 'Roboto Slab', serif !important;
   font-weight: 900 !important;
-  font-size: 5em !important;
+  font-size: 3em !important;
   /* margin-bottom: .1em; */
   color: #787878;
   line-height: 1.5em;
