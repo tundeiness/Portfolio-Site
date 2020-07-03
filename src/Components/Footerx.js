@@ -29,6 +29,11 @@ const Footer = () => (
           </a>
         </Button>
         <Button className="footer-button ml-3" variant="outline-light">
+          <a href="#" className="icon brands fa-codepen">
+            <FontAwesomeIcon className="footer-icon" icon={['fab', 'codepen']} style={{ color: 'gray' }} size="lg" />
+          </a>
+        </Button>
+        <Button className="footer-button ml-3" variant="outline-light">
           <a href="#" className="icon brands fa-angellist">
             <FontAwesomeIcon className="footer-icon" icon={['fab', 'angellist']} style={{ color: 'gray' }} size="lg" />
           </a>
