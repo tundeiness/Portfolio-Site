@@ -222,7 +222,7 @@ class Main extends React.Component {
             </Modal.Body>
             <Modal.Footer className="justify-content-lg-between">
               <Row>
-                <Col className="pl-0" lg={12}>
+                <Col className="pl-0 modal-button" lg={12}>
                   <Button className="live">
                     <a href="#" className="modal-live-button">
                       Live
@@ -230,8 +230,7 @@ class Main extends React.Component {
                   </Button>
                   <Button className="github ml-1">
                     <a href="#" className="modal-Github-button">
-                      <FontAwesomeIcon icon={['fab', 'github']} style={{ color: 'white' }} size="2.5x" />
-                      ;
+                      <FontAwesomeIcon className="modal-github-button" icon={['fab', 'github']} size="2.5x" />
                     </a>
                   </Button>
                 </Col>
