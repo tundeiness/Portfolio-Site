@@ -7,14 +7,16 @@ import Col from 'react-bootstrap/Col';
 // import Carousel from '../Components/Carousel';
 import Header from './Header';
 import Main from './Main';
+import Footer from './Footerx';
 
 const Body = ({ title, subtitle, slug }) => (
   <Container className=" cont-color" fluid>
     <Row className="d-flex justify-content-between flex-xs-column flex-sm-column flex-md-column flex-lg-row  cont-row ">
-      <Col className=" row-col-color-1 " xs={12} sm={12} lg={4}>
+      <Col className=" align-content-lg-between row-col-color-1 " xs={12} sm={12} lg={4}>
         <Header />
+        <Footer />
       </Col>
-      <Col className="px-5 row-col-color-2" xs={12} sm={12} lg={8}>
+      <Col className="px-5 flex-lg-column row-col-color-2" xs={12} sm={12} lg={8}>
         <Main />
       </Col>
     </Row>

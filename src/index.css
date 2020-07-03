@@ -74,6 +74,7 @@ code {
   /* min-height: 100%; */
   /* overflow: hidden; */
   text-align: center;
+  position: relative;
   min-height: 100vh;
   /* position: fixed !important;
   margin-left: -33.4%; */
@@ -368,9 +369,25 @@ strong{
 
 /* Footer */
 
-#footer{}
+#footer{
+
+}
+
+.row-footer{}
 
 .footer-inner{}
+.footer-button{
+  border: none !important;
+}
+.footer-button:hover{
+  /* border: none !important; */
+  background: none !important ;
+}
+
+.footer-icon:hover{
+  color: #49bf9d !important ;
+  /* background: none !important; */
+}
 
 .icons{
   margin-top: 1em;
@@ -379,6 +396,14 @@ strong{
 ul.icons{
 
   list-style: none;
+}
+
+.copyright{
+  text-align: center !important;
+}
+
+.copyright li{
+
 }
 
 /* Section two */

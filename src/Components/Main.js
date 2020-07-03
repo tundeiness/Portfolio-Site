@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../fontawesome';
 
 import Contact from '../pages/Contact';
-import Footer from './Footerx';
+// import Footer from './Footerx';
 
 class Main extends React.Component {
   constructor(props) {
@@ -196,10 +196,9 @@ class Main extends React.Component {
               </div>
             </section>
           </Col>
-          <Col>
-            {/* Footer */}
+          {/* <Col lg={12}>
             <Footer />
-          </Col>
+          </Col> */}
         </Row>
         {filtered.map(data => (
           <Modal size="lg" centered show={show} key={`${data.id}`}>
@@ -242,7 +241,6 @@ class Main extends React.Component {
           </Modal>
         ))}
         ;
-
       </>
     );
   }
