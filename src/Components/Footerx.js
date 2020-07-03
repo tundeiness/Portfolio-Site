@@ -24,7 +24,7 @@ class Footer extends React.Component {
             <Col className="p-0 d-flex justify-content-end" md={3}>Built with love by O`tunde</Col>
           </Row>
         </Container> */}
-        <Row className="row-footer mt-5 pt-5 justify-content-center" id="footer">
+        <Row className="row-footer mt-5 mb-2 pt-5 justify-content-center" id="footer">
           <Col className="footer-inner" lg={12} xs={12}>
             <Button className="footer-button" variant="outline-light">
               <FontAwesomeIcon className="footer-icon" icon={['fab', 'twitter']} style={{ color: 'gray' }} size="lg" />
