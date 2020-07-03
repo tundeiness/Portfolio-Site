@@ -197,7 +197,7 @@ class Main extends React.Component {
             </section>
           </Col>
           <Col>
-            Footer
+            {/* Footer */}
             <Footer />
           </Col>
         </Row>
