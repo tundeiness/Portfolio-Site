@@ -15,6 +15,10 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@900&display=swap');
 
 
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+
 
 
 .gcard{
@@ -53,6 +57,20 @@ code {
 .err-msg{
   padding: 10px 15px;
   color: #ee6352;
+}
+
+/* About Section */
+
+.major > h2{
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 900 !important;
+  font-size: 5em !important;
+}
+
+#one > p{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1.2em !important;
 }
 
 .cont-row{

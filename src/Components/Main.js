@@ -100,9 +100,10 @@ class Main extends React.Component {
             <section id="one">
               <header className="major">
                 <h2>
-                  Ipsum lorem dolor aliquam ante commodo
+                  {/* Ipsum lorem dolor aliquam ante commodo
                   <br />
-                  magna sed accumsan arcu neque.
+                  magna sed accumsan arcu neque. */}
+                  About Me
                 </h2>
               </header>
               <p>
@@ -196,9 +197,6 @@ class Main extends React.Component {
               </div>
             </section>
           </Col>
-          {/* <Col lg={12}>
-            <Footer />
-          </Col> */}
         </Row>
         {filtered.map(data => (
           <Modal size="lg" centered show={show} key={`${data.id}`}>
@@ -208,8 +206,6 @@ class Main extends React.Component {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              {/* <h4>{data.title}</h4>
-              <p>{data.description}</p> */}
               <Card>
                 <Card.Img variant="top" src={data.imageLink} />
                 {/* <Card.Body>
