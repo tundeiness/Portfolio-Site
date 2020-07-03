@@ -73,6 +73,15 @@ font-family: 'Roboto Slab', serif; */
   font-size: 1.2em !important;
 }
 
+#next > h2{
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 900 !important;
+  font-size: 5em !important;
+  margin-bottom: .2em;
+  color: #787878;
+  line-height: 1.5em;
+}
+
 .cont-row{
   /* position: relative; */
   /* min-height: 100vh; */
@@ -292,10 +301,10 @@ strong{
 .major > h2{
   margin-bottom: 32px;
   color: #787878;
-  font-size: 2em;
+  /* font-size: 2em; */
   line-height: 1.5em;
   /* color: #787878; */
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 .main-button{
