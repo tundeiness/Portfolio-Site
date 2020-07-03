@@ -66,7 +66,7 @@ class Contact extends React.Component {
           <p>
             Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
           </p>
-          <Form onSubmit={this.handleSubmit}>
+          <Form onSubmit={this.handleSubmit} md={8}>
             <Form.Group>
               <Form.Label htmlFor="full-name"> Full-Name</Form.Label>
               <Form.Control id="full-name" name="name" type="text" value={name} onChange={this.handleChange} />

@@ -116,7 +116,8 @@ class Main extends React.Component {
           </Col>
 
           <Col className="section-two" id="next">
-            <h2>Body of Work</h2>
+            <h2>Projects</h2>
+            <p>Browse through selections of my projects based on the tech stacks I have used.</p>
             <Row className="flex-lg-wrap justify-content-lg-around">
               {Repo}
               {/* <Col className="project-item" xs={12} lg="6">
