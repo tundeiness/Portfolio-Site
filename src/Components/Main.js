@@ -235,7 +235,7 @@ class Main extends React.Component {
                   </Button>
                 </Col>
               </Row>
-              <Button onClick={this.hideModal}>Close</Button>
+              <Button className="modal-close-button" onClick={this.hideModal}>Close</Button>
             </Modal.Footer>
           </Modal>
         ))}

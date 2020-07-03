@@ -490,6 +490,16 @@ transition: all  2s ease-in-out;
   border: 2px solid #49bf9d !important
 }
 
- .modal-live-button{
-
+ .modal-close-button{
+  background-color: transparent !important;
+  font-weight: 400 !important;
+  border: 2px solid gray !important;
+  color: #787878 !important;
 }
+
+.modal-close-button:hover{
+  color:#49bf9b !important;
+  border: 2px solid #49bf9d !important
+}
+
+
