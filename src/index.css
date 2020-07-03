@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@900&display=swap');
+
 
 
 
@@ -144,7 +146,8 @@ strong{
 }
 
 .row-col-color-2{
-  background: #ee6352;
+  /* background: #ee6352; */
+  background: #000;
   overflow-y: scroll;
   /* overflow-y: visible; */
   /* overscroll-behavior-y: scroll; */
