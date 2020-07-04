@@ -9,7 +9,7 @@ import Header from './Header';
 import Main from './Main';
 import Footer from './Footerx';
 
-const Body = ({ title, subtitle, slug }) => (
+const Body = () => (
   <Container className=" cont-color" fluid>
     <Row className="d-flex justify-content-between flex-xs-column flex-sm-column flex-md-column flex-lg-row  cont-row ">
       <Col className=" align-content-lg-between row-col-color-1 " xs={12} sm={12} lg={4}>
