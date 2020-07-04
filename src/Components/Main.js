@@ -223,12 +223,12 @@ class Main extends React.Component {
               <Row>
                 <Col className="pl-0 modal-button" lg={12}>
                   <Button className="live">
-                    <a href="#" className="modal-live-button">
+                    <a href={data.liveLink} className="modal-live-button">
                       Live
                     </a>
                   </Button>
                   <Button className="github ml-1">
-                    <a href="#" className="modal-Github-button">
+                    <a href={data.github} className="modal-Github-button">
                       <FontAwesomeIcon className="modal-github-button" icon={['fab', 'github']} size="2.5x" />
                     </a>
                   </Button>
