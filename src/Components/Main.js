@@ -48,7 +48,7 @@ class Main extends React.Component {
         {
           id: 4,
           title: 'NewsWeek',
-          imageLink: 'https://github.com/tundeiness/Newsweek-clone/blob/development/img/live-preview.png',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/86515524-62d3f180-be11-11ea-8a93-56f6c35e0c55.png',
           description: 'feel free to check `em out',
           liveLink: 'https://tundeiness.github.io/Newsweek-clone/ ',
           github: 'https://github.com/tundeiness/Newsweek-clone/tree/master ',
