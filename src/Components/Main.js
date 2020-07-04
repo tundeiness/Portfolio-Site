@@ -118,10 +118,10 @@ class Main extends React.Component {
                 . I love making complex tasks simple.
                 I have a knack for paying attention to details, and I like working in a team, which allows me to grow and learn more.
                 <br />
-                In the future, I'd like to set up a startup that focuses on providing programming solutions to the geospatial industry.
-                When I'm not writing codes, I love playing video games, tinkering with single board computers for IoT automation, and reading.
+                In the future, I&apos;d like to set up a startup that focuses on providing programming solutions to the geospatial industry.
+                When I&apos;m not writing codes, I love playing video games, tinkering with single board computers for IoT automation, and reading.
                 <br />
-                I'm currently available for hire.
+                I&apos;m currently available for hire.
 
               </p>
               <Button className="main-button bg-transparent">
