@@ -108,7 +108,21 @@ class Main extends React.Component {
                 </h2>
               </header>
               <p>
-                Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                I am a full stack developer, skilled in the use of the following tech stack:
+                {' '}
+                <strong>Rails, Ruby, React, Redux, Javascript, Postgresql,</strong>
+                {' '}
+                and
+                {' '}
+                <strong>MySQL</strong>
+                . I love making complex tasks simple.
+                I have a knack for paying attention to details, and I like working in a team, which allows me to grow and learn more.
+                <br />
+                In the future, I'd like to set up a startup that focuses on providing programming solutions to the geospatial industry.
+                When I'm not writing codes, I love playing video games, tinkering with single board computers for IoT automation, and reading.
+                <br />
+                I'm currently available for hire.
+
               </p>
               <Button className="main-button bg-transparent">
                 <a href="#contact-me" className="button">Contact</a>
