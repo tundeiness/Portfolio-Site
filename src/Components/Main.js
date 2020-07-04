@@ -23,35 +23,35 @@ class Main extends React.Component {
       repositories: [
         {
           id: 1,
-          title: 'Escape',
-          imageLink: 'https://user-images.githubusercontent.com/25479050/85928844-1b48e500-b8a8-11ea-8720-9665d4590d9e.jpg',
+          title: 'eBartender',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/76782412-8a467600-67b0-11ea-90f4-c6ff1a5975ac.gif',
           description: 'feel free to check `em out',
-          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
-          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          liveLink: 'https://gentle-harbor-14657.herokuapp.com/ ',
+          github: 'https://github.com/tundeiness/eBartender ',
         },
         {
           id: 2,
-          title: 'Rom Dom!',
-          imageLink: 'https://user-images.githubusercontent.com/25479050/85928845-1d12a880-b8a8-11ea-992e-637fe65e6404.jpg',
+          title: 'Bookstore',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/73641302-1ae94c80-4670-11ea-8933-ab6e6df2bcbc.gif',
           description: 'feel free to check `em out',
-          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
-          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          liveLink: 'https://react-2020-bookstore.herokuapp.com/ ',
+          github: 'https://github.com/tundeiness/Bookstore',
         },
         {
           id: 3,
-          title: 'Pixie pie',
-          imageLink: 'https://user-images.githubusercontent.com/25479050/85928846-1dab3f00-b8a8-11ea-9028-b20a96226a3e.jpg',
+          title: 'Restaurant',
+          imageLink: 'https://github.com/tundeiness/Restaurant/blob/feature/img/Restaurant.gif',
           description: 'feel free to check `em out',
-          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
-          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          liveLink: 'https://tundeiness.github.io/Restaurant/ ',
+          github: 'https://github.com/tundeiness/Restaurant ',
         },
         {
           id: 4,
-          title: 'Ghost Daddy',
-          imageLink: 'https://user-images.githubusercontent.com/25479050/85928848-1e43d580-b8a8-11ea-9ea0-f9a728680a8c.jpg',
+          title: 'NewsWeek',
+          imageLink: 'https://github.com/tundeiness/Newsweek-clone/blob/development/img/live-preview.png',
           description: 'feel free to check `em out',
-          liveLink: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
-          github: 'Adipisicing magna elit veniam consectetur. Tempor amet laboris id occaecat quis ',
+          liveLink: 'https://tundeiness.github.io/Newsweek-clone/ ',
+          github: 'https://github.com/tundeiness/Newsweek-clone/tree/master ',
         },
       ],
     };
@@ -78,7 +78,7 @@ class Main extends React.Component {
       <Col className="project-item mb-4" xs={12} lg="6" key={`${data.id}`}>
         <Card className="project-item-card ">
           <Card.Img variant="top" src={data.imageLink} />
-          <Card.Text>Project name</Card.Text>
+          <Card.Text>{data.title}</Card.Text>
           <Button className="d-inline-block project-button" id={`${data.id}`} key={`${data.id}`} onClick={this.showModal}>View</Button>
         </Card>
       </Col>
