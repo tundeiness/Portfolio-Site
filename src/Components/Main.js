@@ -110,9 +110,9 @@ class Main extends React.Component {
               <p>
                 Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
               </p>
-              {/* <Button className="main-button bg-transparent">
-                <a href="#" className="button">Learn More</a>
-              </Button> */}
+              <Button className="main-button bg-transparent">
+                <a href="#contact-me" className="button">Contact</a>
+              </Button>
             </section>
           </Col>
 
@@ -152,7 +152,7 @@ class Main extends React.Component {
         <p>
           Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
         </p> */}
-              <div className="row">
+              <div className="row" id="contact-me">
                 <Contact />
                 {/* <div className="col-8 col-12-small">
             <form method="post" action="#">
