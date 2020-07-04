@@ -14,8 +14,17 @@ const Header = () => (
       </Col>
       <Col className="d-flex justify-content-center   justify-content-sm-center justify-content-md-center justify-content-lg-end" xs={12}>
         <h1 className="d-lg-inline d-xs-inline d-sm-inline">
-          <strong>I am Strata</strong>
-          , a super simple
+          <strong>Hi!</strong>
+          {' '}
+          {' '}
+          my name is
+          {' '}
+          <strong>Tunde Oretade</strong>
+          {' '}
+          <br />
+          <br />
+          Developer | Tinkerer
+          {/* , a super simple
           <br />
           <br />
           responsive site template freebie
@@ -23,7 +32,7 @@ const Header = () => (
           <br />
           crafted by
           {' '}
-          <a href="http://html5up.net">HTML5 UP</a>
+          <a href="http://html5up.net">HTML5 UP</a> */}
         </h1>
       </Col>
     </Row>
