@@ -78,6 +78,7 @@ class Main extends React.Component {
       <Col className="project-item mb-4" xs={12} lg="6" key={`${data.id}`}>
         <Card className="project-item-card ">
           <Card.Img variant="top" src={data.imageLink} />
+          <Card.Text>Project name</Card.Text>
           <Button className="d-inline-block project-button" id={`${data.id}`} key={`${data.id}`} onClick={this.showModal}>View</Button>
         </Card>
       </Col>

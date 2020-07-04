@@ -422,6 +422,16 @@ transition: all  2s ease-in-out;
    border: none !important;
  }
 
+ /* Card */
+
+ .card-text{
+  /* font-family: 'Roboto Slab', serif !important; */
+  font-family: 'Montserrat', sans-serif !important;
+  margin: auto;
+ }
+
+
+
  /* Modal */
  .modal-button > Button{
   background-color: transparent !important;
