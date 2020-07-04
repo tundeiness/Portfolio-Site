@@ -40,7 +40,7 @@ class Main extends React.Component {
         {
           id: 3,
           title: 'Restaurant',
-          imageLink: 'https://github.com/tundeiness/Restaurant/blob/feature/img/Restaurant.gif',
+          imageLink: 'https://user-images.githubusercontent.com/25479050/86515219-58185d00-be0f-11ea-8cd1-abbe05b6efc7.gif',
           description: 'feel free to check `em out',
           liveLink: 'https://tundeiness.github.io/Restaurant/ ',
           github: 'https://github.com/tundeiness/Restaurant ',
