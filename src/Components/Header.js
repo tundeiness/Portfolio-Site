@@ -12,18 +12,18 @@ const Header = () => (
           <img src="https://user-images.githubusercontent.com/25479050/85928866-43384880-b8a8-11ea-89ab-9d42b1ae286d.jpg" alt="avatar-name" />
         </a>
       </Col>
-      <Col className="d-flex justify-content-center   justify-content-sm-center justify-content-md-center justify-content-lg-end" xs={12}>
-        <h1 className="d-lg-inline d-xs-inline d-sm-inline">
+      <Col className="d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-end header-col" xs={12}>
+        <h1 className="d-lg-inline d-xs-inline d-sm-inline header-col-heading">
           <strong>Hi!</strong>
           {' '}
           {' '}
           my name is
           {' '}
-          <strong>Tunde Oretade</strong>
+          <span className="name"><strong>Tunde Oretade</strong></span>
           {' '}
           <br />
           <br />
-          Developer | Tinkerer
+          <span className="title">Fullstack Developer  |  Tinkerer</span>
           {/* , a super simple
           <br />
           <br />
