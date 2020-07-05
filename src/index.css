@@ -397,6 +397,7 @@ ul.icons{
 
 .project-item-card{
   position: relative;
+  border: none !important;
 }
 
 .project-item-card Button{
