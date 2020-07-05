@@ -71,6 +71,10 @@ font-family: 'Roboto Slab', serif; */
   font-size: .8em !important;
 }
 
+.header-col-heading > hr{
+  margin-top: -.6em;
+}
+
 /* About Section */
 
 .major > h2{
