@@ -64,7 +64,8 @@ class Contact extends React.Component {
         <Content>
           <h2>Get In Touch</h2>
           <p>
-            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
+            Do you like my work, have a question, want to just say hello, want to work together or you want to hire me? Contact me by filling out the form below or through social sites listed to the left of your screen.
+            {/* Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor. */}
           </p>
           <Form onSubmit={this.handleSubmit} md={8}>
             <Form.Group>
