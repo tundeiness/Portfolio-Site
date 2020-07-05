@@ -61,6 +61,10 @@ font-family: 'Roboto Slab', serif; */
 
 /* Header */
 
+.header-col-heading{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 .header-col-heading > .name{
   font-family: 'Roboto Slab', serif !important;
   text-transform: uppercase;
