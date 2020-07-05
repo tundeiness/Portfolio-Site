@@ -23,6 +23,7 @@ const Header = () => (
           {' '}
           <br />
           <br />
+          <hr />
           <span className="title">Fullstack Developer  |  Tinkerer</span>
           {/* , a super simple
           <br />

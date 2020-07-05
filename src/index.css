@@ -63,7 +63,12 @@ font-family: 'Roboto Slab', serif; */
 
 .header-col-heading > .name{
   font-family: 'Roboto Slab', serif !important;
+  text-transform: uppercase;
+}
 
+.header-col-heading > .title{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: .8em !important;
 }
 
 /* About Section */
