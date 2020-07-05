@@ -59,6 +59,13 @@ font-family: 'Roboto Slab', serif; */
   color: #ee6352;
 }
 
+/* Header */
+
+.header-col-heading > .name{
+  font-family: 'Roboto Slab', serif !important;
+
+}
+
 /* About Section */
 
 .major > h2{
