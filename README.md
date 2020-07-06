@@ -5,7 +5,7 @@
     This is my personal portfolio site where my body of work are showcased.
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://tender-austin-1ca0b4.netlify.app/">View Demo</a>
     ·
     <a href="#">Report Bug</a>
     ·
