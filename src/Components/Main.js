@@ -49,7 +49,7 @@ class Main extends React.Component {
           id: 4,
           title: 'NewsWeek',
           imageLink: 'https://user-images.githubusercontent.com/25479050/86515524-62d3f180-be11-11ea-8a93-56f6c35e0c55.png',
-          description: 'Flex, HTML, CSS',
+          description: 'HTML, CSS Flexbox',
           liveLink: 'https://tundeiness.github.io/Newsweek-clone/ ',
           github: 'https://github.com/tundeiness/Newsweek-clone/tree/master ',
         },
@@ -122,7 +122,7 @@ class Main extends React.Component {
 
               </p>
               <Button className="main-button bg-transparent">
-                <a href="#contact-me" className="button">Contact</a>
+                <a href="#contact-me" className="button">Contact Me</a>
               </Button>
             </section>
           </Col>
@@ -222,12 +222,13 @@ class Main extends React.Component {
             <Modal.Body>
               <Card>
                 <Card.Img variant="top" src={data.imageLink} />
-                {/* <Card.Body>
+                <Card.Body>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk
-                    of the card's content.
+                    Tech Used:
+                    {' '}
+                    {data.description}
                   </Card.Text>
-                </Card.Body> */}
+                </Card.Body>
               </Card>
             </Modal.Body>
             <Modal.Footer className="justify-content-lg-between">
