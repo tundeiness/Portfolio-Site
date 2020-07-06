@@ -1,12 +1,9 @@
 /* eslint-disable max-len */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-useless-constructor */
-/* eslint-disable react/prefer-stateless-function */
+
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Axios from 'axios';
-// import Hero from '../Components/Hero';
 import Content from '../Components/content';
 
 class Contact extends React.Component {
@@ -54,13 +51,11 @@ class Contact extends React.Component {
   }
 
   render() {
-    // const { title } = this.props;
     const {
       name, email, message, disabled, emailSent,
     } = this.state;
     return (
       <div>
-        {/* <Hero title={title} /> */}
         <Content>
           <h2>Get In Touch</h2>
           <p>
