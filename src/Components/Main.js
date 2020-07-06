@@ -84,15 +84,12 @@ class Main extends React.Component {
       </Col>
     ));
 
-    // onClick={() => { func1(); func2();}}
-
     const filtered = repositories.filter(data => {
       if (data.id === buttonId) {
         return data;
       }
       return null;
     });
-    console.log('filtering =>', filtered);
 
     return (
       <>
@@ -108,7 +105,7 @@ class Main extends React.Component {
                 </h2>
               </header>
               <p>
-                i'm a driven, self-starting full-stack web developer, skilled in the use of the following tech stack:
+                I am a driven, self-starting full-stack web developer, skilled in the use of the following tech stack:
                 {' '}
                 <strong>Rails, Ruby, React, Redux, Javascript, Postgresql,</strong>
                 {' '}
