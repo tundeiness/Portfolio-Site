@@ -453,6 +453,14 @@ transition: all  2s ease-in-out;
   border: 2px solid gray !important;
  }
 
+ .card-text > .tech-stack{
+  font-family: 'Montserrat', sans-serif !important;
+  text-transform: uppercase;
+  /* color: #49bf9b; */
+  color: #787878 !important;
+  font-weight: bold;
+ }
+
 
 
  .live{
