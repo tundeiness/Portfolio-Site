@@ -14,22 +14,22 @@ const Footer = () => (
     <Row className="row-footer mt-5 mb-2 pt-5 justify-content-center" id="footer">
       <Col className="footer-inner" lg={12} xs={12}>
         <Button className="footer-button" variant="outline-light">
-          <a href="#" className="icon brands fa-twitter">
+          <a href="https://twitter.com/tundeiness" className="icon brands fa-twitter">
             <FontAwesomeIcon className="footer-icon" icon={['fab', 'twitter']} style={{ color: 'gray' }} size="lg" />
           </a>
         </Button>
         <Button className="footer-button ml-3" variant="outline-light">
-          <a href="#" className="icon brands fa-github">
+          <a href="https://github.com/tundeiness" className="icon brands fa-github">
             <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} style={{ color: 'gray' }} size="lg" />
           </a>
         </Button>
         <Button className="footer-button ml-3" variant="outline-light">
-          <a href="#" className="icon brands fa-linkedin">
+          <a href="https://www.linkedin.com/in/tunde-oretade/" className="icon brands fa-linkedin">
             <FontAwesomeIcon className="footer-icon" icon={['fab', 'linkedin']} style={{ color: 'gray' }} size="lg" />
           </a>
         </Button>
         <Button className="footer-button ml-3" variant="outline-light">
-          <a href="#" className="icon brands fa-codepen">
+          <a href="https://codepen.io/highness" className="icon brands fa-codepen">
             <FontAwesomeIcon className="footer-icon" icon={['fab', 'codepen']} style={{ color: 'gray' }} size="lg" />
           </a>
         </Button>

@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -25,15 +24,6 @@ const Header = () => (
           <br />
           <hr />
           <span className="title">Fullstack Developer  |  Tinkerer</span>
-          {/* , a super simple
-          <br />
-          <br />
-          responsive site template freebie
-          <br />
-          <br />
-          crafted by
-          {' '}
-          <a href="http://html5up.net">HTML5 UP</a> */}
         </h1>
       </Col>
     </Row>
