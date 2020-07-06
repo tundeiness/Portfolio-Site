@@ -108,7 +108,7 @@ class Main extends React.Component {
                 </h2>
               </header>
               <p>
-                I am a full stack developer, skilled in the use of the following tech stack:
+                i'm a driven, self-starting full-stack web developer, skilled in the use of the following tech stack:
                 {' '}
                 <strong>Rails, Ruby, React, Redux, Javascript, Postgresql,</strong>
                 {' '}
@@ -116,7 +116,7 @@ class Main extends React.Component {
                 {' '}
                 <strong>MySQL</strong>
                 . I love making complex tasks simple.
-                I have a knack for paying attention to details, and I like working in a team, which allows me to grow and learn more.
+                I am resourceful and I have a knack for paying attention to detail. I like working in a team, which allows me to grow and learn more.
                 <br />
                 In the future, I&apos;d like to set up a startup that focuses on providing programming solutions to the geospatial industry.
                 When I&apos;m not writing codes, I love playing video games, tinkering with single board computers for IoT automation, and reading.
