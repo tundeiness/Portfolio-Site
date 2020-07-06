@@ -224,7 +224,7 @@ class Main extends React.Component {
                 <Card.Img variant="top" src={data.imageLink} />
                 <Card.Body>
                   <Card.Text>
-                    Tech Used:
+                    <span className="tech-stack">Tech Stack Used: </span>
                     {' '}
                     {data.description}
                   </Card.Text>
