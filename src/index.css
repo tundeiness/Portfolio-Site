@@ -73,10 +73,13 @@ font-family: 'Roboto Slab', serif; */
 .header-col-heading > .title{
   font-family: 'Montserrat', sans-serif !important;
   font-size: .8em !important;
+  /* margin-top: 1em !important; */
 }
 
 .header-col-heading > hr{
   margin-top: -.6em;
+  margin-bottom: -.1em;
+  padding-bottom: .3em;
 }
 
 /* About Section */
