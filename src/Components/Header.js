@@ -9,7 +9,7 @@ const Header = () => (
       <Col xs={12} className=" d-flex justify-content-center justify-content-lg-end col-avatar">
         <a href="#" className="d-inline-block image-avatar mx-3">
           <img
-            src="https://user-images.githubusercontent.com/25479050/86763357-2f76aa00-c03f-11ea-9722-ea02d72429f2.png"
+            src="https://user-images.githubusercontent.com/25479050/86805057-6f558580-c06f-11ea-8d72-c08566248b37.png"
             width={123}
             height={123}
             alt="avatar-name"
