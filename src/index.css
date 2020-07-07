@@ -177,6 +177,8 @@ form > .form-group > .form-label{
 
 .image-avatar{
   margin-bottom: 1em;
+  width:123px;
+  height:123px;
 }
 
 .image-avatar img {
