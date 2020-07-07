@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,7 +6,7 @@ const Header = () => (
   <>
     <Row className="flex-column  row-inner mb-5 pb-5">
       <Col xs={12} className=" d-flex justify-content-center justify-content-lg-end col-avatar">
-        <a href="#" className="d-inline-block image-avatar mx-3">
+        <a className="d-inline-block image-avatar mx-3">
           <img
             src="https://user-images.githubusercontent.com/25479050/86763357-2f76aa00-c03f-11ea-9722-ea02d72429f2.png"
             width={123}
