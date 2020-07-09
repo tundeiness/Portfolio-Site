@@ -37,7 +37,7 @@ class Contact extends React.Component {
     });
     // https://portfolio-node-back.herokuapp.com/
     // http://localhost:4040/api/email
-    Axios.post('https://portfolio-node-back.herokuapp.com/api/email')
+    Axios.post('https://cors-anywhere.herokuapp.com/https://portfolio-node-back.herokuapp.com/api/email')
       .then(res => {
         if (res.data.success) {
           this.setState({ disabled: false, emailSent: true });
