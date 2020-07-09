@@ -156,6 +156,9 @@ class Main extends React.Component {
                 <Card.Img variant="top" src={data.imageLink} />
                 <Card.Body>
                   <Card.Text>
+                    <span className="features">Features : </span>
+                    {' '}
+                    {data.feature}
                     <span className="tech-stack">Tech Stack Used : </span>
                     {' '}
                     {data.description}
