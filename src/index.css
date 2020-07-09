@@ -458,12 +458,20 @@ transition: all  2s ease-in-out;
  .card-text > .tech-stack{
   font-family: 'Montserrat', sans-serif !important;
   text-transform: uppercase;
-  /* color: #49bf9b; */
   color: #787878 !important;
   font-weight: bold;
   font-size: 400 !important;
   line-height: none !important;
  }
+
+ .card-text > .features{
+  font-family: 'Montserrat', sans-serif !important;
+  text-transform: uppercase;
+  color: #787878 !important;
+  font-weight: bold;
+ }
+
+
 
 
 

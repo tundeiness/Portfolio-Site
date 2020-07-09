@@ -160,6 +160,7 @@ class Main extends React.Component {
                     {' '}
                     {data.feature}
                     <br />
+                    <br />
                     <span className="tech-stack">Tech Stack Used : </span>
                     {' '}
                     {data.description}
