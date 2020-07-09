@@ -50,7 +50,7 @@ class Main extends React.Component {
           title: 'NewsWeek',
           imageLink: 'https://user-images.githubusercontent.com/25479050/86515524-62d3f180-be11-11ea-8a93-56f6c35e0c55.png',
           description: 'HTML, CSS Flexbox',
-          feature: 'This is a New-York-Times clone reproduced using CSS positioning and floating elements approach',
+          feature: 'This NewsWeek clone reproduced using Bootstrap.The Project is fully Responsive',
           liveLink: 'https://tundeiness.github.io/Newsweek-clone/ ',
           github: 'https://github.com/tundeiness/Newsweek-clone/tree/master ',
         },
