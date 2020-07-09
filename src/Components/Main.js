@@ -159,6 +159,7 @@ class Main extends React.Component {
                     <span className="features">Features : </span>
                     {' '}
                     {data.feature}
+                    <br />
                     <span className="tech-stack">Tech Stack Used : </span>
                     {' '}
                     {data.description}
