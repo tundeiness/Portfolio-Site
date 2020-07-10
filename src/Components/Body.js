@@ -1,10 +1,7 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import Hero from './Hero';
-// import Carousel from '../Components/Carousel';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footerx';
