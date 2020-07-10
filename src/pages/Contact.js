@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable max-len */
 
 import React from 'react';
@@ -47,7 +48,7 @@ class Contact extends React.Component {
       })
       .catch(err => {
         this.setState({ disabled: false, emailSent: false });
-        console.log('Error', err);
+        console.error('Error', err);
       });
   }
 
