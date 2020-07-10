@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,12 +6,12 @@ const Header = () => (
   <>
     <Row className="flex-column  row-inner mb-5 pb-5">
       <Col xs={12} className=" d-flex justify-content-center justify-content-lg-end col-avatar">
-        <a href="#" className="d-inline-block image-avatar mx-3">
+        <a target="_blank" rel="noreferrer" href="github.com/tundeiness" className="d-inline-block image-avatar mx-3">
           <img
             src="https://user-images.githubusercontent.com/25479050/86805057-6f558580-c06f-11ea-8d72-c08566248b37.png"
             width={123}
             height={123}
-            alt="avatar-name"
+            alt="tunde's portrait"
           />
         </a>
       </Col>
