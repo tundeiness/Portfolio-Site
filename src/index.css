@@ -494,30 +494,26 @@ transition: all  2s ease-in-out;
   color: gray !important;
 }
 
-.modal-github-button:hover{
-  color:#49bf9b !important;
+.modal-github-button:hover {
+  color: #49bf9b !important;
 }
 
-.github:hover{
-  /* text-decoration: none !important; */
-  /* color: #49bf9b !important */
+.github:hover {
   border: 2px solid #49bf9d !important;
 }
 
-.live:hover{
-  border: 2px solid #49bf9d !important
+.live:hover {
+  border: 2px solid #49bf9d !important;
 }
 
- .modal-close-button{
+.modal-close-button {
   background-color: transparent !important;
   font-weight: 400 !important;
   border: 2px solid gray !important;
   color: #787878 !important;
 }
 
-.modal-close-button:hover{
-  color:#49bf9b !important;
-  border: 2px solid #49bf9d !important
+.modal-close-button:hover {
+  color: #49bf9b !important;
+  border: 2px solid #49bf9d !important;
 }
-
-
