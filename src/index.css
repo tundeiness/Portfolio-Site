@@ -1,119 +1,101 @@
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-}
 
-code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace; */
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen',
+
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@900&display=swap');
 
-
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
-
-
-
-.gcard{
+.gcard {
   margin: 20px;
 }
 
-.gcard-img{
+.gcard-img {
   border-radius: 10px;
   width: 300px;
   height: 410px;
-  box-shadow: 0px 0px 3px 1px  #ccc;
+  box-shadow: 0 0 3px 1px  #ccc;
 }
 
-.gcard-info{
+.gcard-info {
   margin-top: 10px;
   min-height: 100px;
-
 }
 
-.gacard-title{
+.gacard-title {
   font-size: 24px;
-  margin: 0px;
+  margin: 0;
 }
 
-.gcard-sub{
- font-size: 16px;
- margin: 0px;
+.gcard-sub {
+  font-size: 16px;
+  margin: 0;
 }
 
-.success-msg{
+.success-msg {
   color: #57a773;
   padding: 10px 15px;
-
 }
 
-.err-msg{
+.err-msg {
   padding: 10px 15px;
   color: #ee6352;
 }
 
 /* Header */
 
-.header-col-heading{
+.header-col-heading {
   font-family: 'Montserrat', sans-serif !important;
 }
 
-.header-col-heading > .name{
+.header-col-heading > .name {
   font-family: 'Roboto Slab', serif !important;
   text-transform: uppercase;
 }
 
-.header-col-heading > .title{
+.header-col-heading > .title {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: .8em !important;
-  /* margin-top: 1em !important; */
+  font-size: 0.8em !important;
 }
 
-.header-col-heading > hr{
-  margin-top: -.6em;
-  margin-bottom: -.1em;
-  padding-bottom: .3em;
+.header-col-heading > hr {
+  margin-top: -0.6em;
+  margin-bottom: -0.1em;
+  padding-bottom: 0.3em;
 }
 
 /* About Section */
 
-.major > h2{
+.major > h2 {
   font-family: 'Roboto Slab', serif !important;
   font-weight: 900 !important;
   font-size: 3em !important;
-}
-
-#one > p{
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 1.2em !important;
-}
-
-#next > h2{
-  font-family: 'Roboto Slab', serif !important;
-  font-weight: 900 !important;
-  font-size: 3em !important;
-  /* margin-bottom: .1em; */
+  margin-bottom: 32px;
   color: #787878;
   line-height: 1.5em;
 }
 
-#next > p{
+#one > p {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 400 !important;
   font-size: 1.2em !important;
   color: #a2a2a2;
-
+  margin-bottom: 2em;
 }
 
-.section-three > h2{
+#next > h2 {
   font-family: 'Roboto Slab', serif !important;
   font-weight: 900 !important;
   font-size: 3em !important;
@@ -121,31 +103,35 @@ font-family: 'Roboto Slab', serif; */
   line-height: 1.5em;
 }
 
-.section-three > p{
+#next > p {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 400 !important;
   font-size: 1.2em !important;
   color: #a2a2a2;
 }
 
-form > .form-group > .form-label{
+.section-three > h2 {
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 900 !important;
+  font-size: 3em !important;
+  color: #787878;
+  line-height: 1.5em;
+}
+
+.section-three > p {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1.2em !important;
+  color: #a2a2a2;
+}
+
+form > .form-group > .form-label {
   color: #a2a2a2 !important;
   font-family: 'Montserrat', sans-serif !important;
 }
 
-.cont-row{
-  /* position: relative; */
-  /* min-height: 100vh; */
-  /* overflow-y: hidden; */
-  /* width: 100%; */
-}
-
-.cont-color{
-  /* border: 1px solid #ee6352; */
-}
-
-.row-col-color-1{
-  background: #1F1815;
+.row-col-color-1 {
+  background: #1f1815;
   background-position: top left, center center;
   background-size: auto, cover;
   background-image: url(https://user-images.githubusercontent.com/25479050/85929387-374e8580-b8ac-11ea-8824-01ef6909d58a.png), url(https://user-images.githubusercontent.com/25479050/85928869-43d0df00-b8a8-11ea-842a-fc131cd27956.jpg);
@@ -155,8 +141,6 @@ form > .form-group > .form-label{
   min-height: 100vh;
 }
 
-
-
 #footer .copyright {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.8em;
@@ -164,21 +148,16 @@ form > .form-group > .form-label{
   margin: 1em 0 0 0;
 }
 
-
-
-.row-inner{
+.row-inner {
   /* border: 1px solid black; */
+
   margin-top: 5em;
 }
 
-/* .row-inner-col{
-  border-radius: 100%;
-} */
-
-.image-avatar{
+.image-avatar {
   margin-bottom: 1em;
-  width:123px;
-  height:123px;
+  width: 123px;
+  height: 123px;
 }
 
 .image-avatar img {
@@ -186,7 +165,7 @@ form > .form-group > .form-label{
   width: 100%;
 }
 
-h1{
+h1 {
   font-size: 1.35em !important;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.75em;
@@ -194,47 +173,44 @@ h1{
   text-align: center;
 }
 
-h1 > a{
+h1 > a {
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
   font-size: 1em;
 }
 
-strong{
-  color: #ffffff;
+strong {
+  color: #fff;
   font-weight: 400;
 }
 
-.row-col-color-2{
+.row-col-color-2 {
   /* background: #ee6352; */
+
   background: #000;
   overflow-y: scroll;
   max-height: 100vh;
 }
 
 @media (min-width: 992px) {
-  html{
+  html {
     overflow-y: hidden !important;
   }
- }
+}
 
-
-@media screen and (max-width: 768px){
-
-  html{
+@media screen and (max-width: 768px) {
+  html {
     overflow-y: scroll;
   }
 
   .row-col-color-2 {
-      overflow-y: visible;
-      max-height: 100%;
-
+    overflow-y: visible;
+    max-height: 100%;
   }
 }
 
-@media screen and (max-width: 992px){
-
-  html{
+@media screen and (max-width: 992px) {
+  html {
     overflow-y: scroll !important;
   }
 
@@ -244,81 +220,62 @@ strong{
   }
 }
 
-@media screen and (max-width: 1200px){
-  html{
+@media screen and (max-width: 1200px) {
+  html {
     overflow-y: hidden;
   }
 
-  .image-avatar{
+  .image-avatar {
     text-align: right !important;
   }
 }
 
-
 /* Section one */
 
-#one > p{
-  color: #a2a2a2;
-  margin-bottom: 2em;
-}
-
-#About > section{
+#About > section {
   margin-top: 4em;
   padding-top: 4em;
 }
 
-.major > h2{
-  margin-bottom: 32px;
-  color: #787878;
-  /* font-size: 2em; */
-  line-height: 1.5em;
-  /* color: #787878; */
-  /* font-weight: 400; */
-}
-
-.main-button{
+.main-button {
   /* border: 3px solid #787878 !important; */
+
   border: 3px solid #e0e2db !important;
+  margin-bottom: 2em;
 }
 
-.main-button:hover{
+.main-button:hover {
   border: 3px solid #49bf9d !important;
   color: #49bf9d !important;
 }
 
-.main-button:hover .button{
+.main-button:hover .button {
   color: #49bf9d !important;
 }
 
-.button{
+.button {
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  /* border-bottom: dotted 1px; */
-  /* color: #49bf9d; */
   text-decoration: none;
   color: #a2a2a2 !important;
+
   /* color: #787878 !important; */
+
   background-color: transparent !important;
   font-weight: 400;
-  /* height: calc(2.75em + 6px); */
   line-height: 2em;
   min-width: 9em;
   padding-right: 1.5em;
   padding-left: 1.5em;
+
   /* padding: 0 1.5em; */
 }
 
-.button:hover{
+.button:hover {
   text-decoration: none;
   color: #49bf9d;
   background: none !important;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-
-
-.main-button{
-  margin-bottom: 2em;
-}
-
 
 #next {
   margin-top: 4em;
@@ -329,124 +286,112 @@ strong{
 
 /* Section three Form */
 
-#three{
-    border-top: solid 2px #a2a2a2;
-    margin-top: 4em;
-    padding-top: 4em;
+#three {
+  border-top: solid 2px #a2a2a2;
+  margin-top: 4em;
+  padding-top: 4em;
 }
 
-#three > h2{
+#three > h2 {
   font-size: 1.5em;
   line-height: 1.5em;
   color: #787878;
   font-weight: 400;
-  line-height: 1em;
-    /* margin: 0 0 1em 0; */
-    /* margin-top: 0px;
-    margin-right: 0px; */
+
+  /* margin: 0 0 1em 0; */
+
+  /* margin-top: 0px;
+
+  margin-right: 0px; */
+
   margin-bottom: 1em;
-    /* margin-left: 0px; */
+
+  /* margin-left: 0px; */
 }
 
-#three > p{
+#three > p {
   /* margin-top: 0px; */
-    /* margin-right: 0px; */
-    margin-bottom: 2em;
-    /* margin-left: 0px; */
+
+  /* margin-right: 0px; */
+
+  margin-bottom: 2em;
+
+  /* margin-left: 0px; */
 }
 
 /* Footer */
 
-#footer{
-
-}
-
-.row-footer{}
-
-.footer-inner{}
-.footer-button{
+.footer-button {
   border: none !important;
 }
-.footer-button:hover{
+
+.footer-button:hover {
   /* border: none !important; */
-  background: none !important ;
+  background: none !important;
 }
 
-.footer-icon:hover{
-  color: #49bf9d !important ;
+.footer-icon:hover {
+  color: #49bf9d !important;
+
   /* background: none !important; */
 }
 
-.icons{
+.icons {
   margin-top: 1em;
 }
 
-ul.icons{
-
+ul.icons {
   list-style: none;
 }
 
-.copyright{
+.copyright {
   text-align: center !important;
-}
-
-.copyright li{
-
 }
 
 /* Section two */
 
-.project-item{
-
-}
-
-.project-item-card{
+.project-item-card {
   position: relative;
   border: none !important;
+  transition: all  2s ease-in-out;
+
+  /* filter: grayscale(100%); */
 }
 
-.project-item-card Button{
+.project-item-card:hover {
+  opacity: 0.3;
+}
+
+.project-item-card Button {
   position: absolute;
   top: 50%;
   left: 50%;
- }
-
-.project-item-card:hover{
- opacity: 0.3;
-}
-
-
-.project-item-card {
-transition: all  2s ease-in-out;
-/* filter: grayscale(100%); */
- }
-
- .project-item-card Button{
   transform: translate(-50%, -50%) scale(0);
   transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
- }
+}
 
- .project-item-card:hover Button{
+.project-item-card:hover Button {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
- }
+}
 
- .project-button{
-   color: gray !important;
-   background-color: #49bf9d !important;
-   border: none !important;
- }
+.project-button {
+  color: gray !important;
+  background-color: #49bf9d !important;
+  border: none !important;
+}
 
- /* Card */
+/* Card */
 
- .card-text{
+.card-text {
   /* font-family: 'Roboto Slab', serif !important; */
+
   font-family: 'Montserrat', sans-serif !important;
   margin: auto;
   color: #787878;
- }
+}
 
- /* Modal */
+/* Modal */
 
 .modal-button > Button {
   background-color: transparent !important;
