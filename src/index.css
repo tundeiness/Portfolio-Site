@@ -446,51 +446,44 @@ transition: all  2s ease-in-out;
   color: #787878;
  }
 
-
-
  /* Modal */
- .modal-button > Button{
+
+.modal-button > Button {
   background-color: transparent !important;
   font-weight: 400 !important;
   border: 2px solid gray !important;
- }
+}
 
- .card-text > .tech-stack{
+.card-text > .tech-stack {
   font-family: 'Montserrat', sans-serif !important;
   text-transform: uppercase;
   color: #787878 !important;
   font-weight: bold;
-  font-size: 400 !important;
-  line-height: none !important;
- }
+  font-size: 1em !important;
+  line-height: 0 !important;
+}
 
- .card-text > .features{
+.card-text > .features {
   font-family: 'Montserrat', sans-serif !important;
   text-transform: uppercase;
   color: #787878 !important;
   font-weight: bold;
- }
+}
 
+.live > .modal-live-button {
+  /* color: #ffffff !important; */
 
+  color: #787878 !important;
+}
 
-
-
- .live{
-  /* color: #fff !important; */
- }
-
- .live > .modal-live-button{
-    /* color: #ffffff !important; */
-    color: #787878 !important;
- }
-
- .live:hover .modal-live-button{
+.live:hover .modal-live-button {
   text-decoration: none !important;
-  color: #49bf9b !important
+  color: #49bf9b !important;
+
   /* border: 2px solid #49bf9d !important; */
 }
 
-.modal-github-button{
+.modal-github-button {
   color: gray !important;
 }
 
