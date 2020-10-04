@@ -37,7 +37,7 @@ React, HTML and Bootstrap.
 
 ### Built With
 
-The frontend section of the Capstone project named eBARTENDER is built with the following:
+The frontend section of my portfolio is built with the following technologies:
 
 - [React](https://reactjs.org/)
 
