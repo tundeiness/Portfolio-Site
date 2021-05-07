@@ -6,9 +6,7 @@ import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-// import Axios from 'axios';
 import Content from '../Components/content';
-// import REACT_APP_USER_ID from '../../base';
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -57,24 +55,6 @@ class Contact extends React.Component {
         this.setState({ disabled: false, emailSent: false });
       });
     e.target.reset();
-
-    // this.setState({
-    //   disabled: true,
-    // });
-    // https://portfolio-node-back.herokuapp.com/
-    // http://localhost:4040/api/email
-    // Axios.post('https://cors-anywhere.herokuapp.com/https://portfolio-node-back.herokuapp.com/api/email')
-    //   .then(res => {
-    //     if (res.data.success) {
-    //       this.setState({ disabled: false, emailSent: true });
-    //     } else {
-    //       this.setState({ disabled: false, emailSent: false });
-    //     }
-    //   })
-    //   .catch(err => {
-    //     this.setState({ disabled: false, emailSent: false });
-    //     console.error('Error', err);
-    //   });
   }
 
   render() {
