@@ -172,12 +172,12 @@ class Main extends React.Component {
               <Row>
                 <Col className="pl-0 modal-button" lg={12}>
                   <Button className="live">
-                    <a target="_blank" rel="noreferrer" href={data.liveLink} className="modal-live-button">
+                    <a target="_blank" rel="noopener noreferrer" href={data.liveLink} className="modal-live-button">
                       Live
                     </a>
                   </Button>
                   <Button className="github ml-1">
-                    <a target="_blank" rel="noreferrer" href={data.github} className="modal-Github-button">
+                    <a target="_blank" rel="noopener noreferrer" href={data.github} className="modal-Github-button">
                       <FontAwesomeIcon className="modal-github-button" icon={['fab', 'github']} size="2.5x" />
                     </a>
                   </Button>
