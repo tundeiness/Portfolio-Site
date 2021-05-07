@@ -2,10 +2,17 @@
 /* eslint-disable max-len */
 
 import React from 'react';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Axios from 'axios';
+// import Axios from 'axios';
 import Content from '../Components/content';
+// import REACT_APP_USER_ID from '../../base';
+
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 class Contact extends React.Component {
   constructor(props) {
@@ -32,24 +39,42 @@ class Contact extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    this.setState({
-      disabled: true,
-      // emailSent: false,
-    });
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then(result => {
+        console.log(result.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent Successfully',
+        });
+        this.setState({ disabled: false, emailSent: true });
+      }, error => {
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: error.text,
+        });
+        this.setState({ disabled: false, emailSent: false });
+      });
+    e.target.reset();
+
+    // this.setState({
+    //   disabled: true,
+    // });
     // https://portfolio-node-back.herokuapp.com/
     // http://localhost:4040/api/email
-    Axios.post('https://cors-anywhere.herokuapp.com/https://portfolio-node-back.herokuapp.com/api/email')
-      .then(res => {
-        if (res.data.success) {
-          this.setState({ disabled: false, emailSent: true });
-        } else {
-          this.setState({ disabled: false, emailSent: false });
-        }
-      })
-      .catch(err => {
-        this.setState({ disabled: false, emailSent: false });
-        console.error('Error', err);
-      });
+    // Axios.post('https://cors-anywhere.herokuapp.com/https://portfolio-node-back.herokuapp.com/api/email')
+    //   .then(res => {
+    //     if (res.data.success) {
+    //       this.setState({ disabled: false, emailSent: true });
+    //     } else {
+    //       this.setState({ disabled: false, emailSent: false });
+    //     }
+    //   })
+    //   .catch(err => {
+    //     this.setState({ disabled: false, emailSent: false });
+    //     console.error('Error', err);
+    //   });
   }
 
   render() {
