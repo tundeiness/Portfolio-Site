@@ -32,11 +32,11 @@ const Footer = () => (
             <FontAwesomeIcon className="footer-icon" icon={['fab', 'codepen']} style={{ color: 'gray' }} size="lg" />
           </a>
         </Button>
-        {/* <Button className="footer-button ml-3" variant="outline-light">
-          <a target="_blank" rel="noreferrer" href="#" className="icon brands fa-angellist">
+        <Button className="footer-button ml-3" variant="outline-light">
+          <a target="_blank" rel="noreferrer" href="https://angel.co/u/tunde-oretade" className="icon brands fa-angellist">
             <FontAwesomeIcon className="footer-icon" icon={['fab', 'angellist']} style={{ color: 'gray' }} size="lg" />
           </a>
-        </Button> */}
+        </Button>
         <ul className=" copyright ">
           <li className="d-inline" style={{ marginLeft: '-3em' }}>© 2021 | Tunde Oretade</li>
         </ul>
