@@ -10,35 +10,90 @@ import '../fontawesome';
 
 const Footer = () => (
   <>
-    <Row className="row-footer mt-5 mb-2 pt-5 justify-content-center" id="footer">
+    <Row
+      className="row-footer mt-5 mb-2 pt-5 justify-content-center"
+      id="footer"
+    >
       <Col className="footer-inner" lg={12} xs={12}>
         <Button className="footer-button" variant="outline-light">
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/tundeiness" className="icon brands fa-twitter">
-            <FontAwesomeIcon className="footer-icon" icon={['fab', 'twitter']} style={{ color: 'gray' }} size="lg" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/tundeiness"
+            className="icon brands fa-twitter"
+          >
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={['fab', 'twitter']}
+              style={{ color: 'gray' }}
+              size="lg"
+            />
           </a>
         </Button>
         <Button className="footer-button ml-3" variant="outline-light">
-          <a target="_blank" rel="noreferrer" href="https://github.com/tundeiness" className="icon brands fa-github">
-            <FontAwesomeIcon className="footer-icon" icon={['fab', 'github']} style={{ color: 'gray' }} size="lg" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/tundeiness"
+            className="icon brands fa-github"
+          >
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={['fab', 'github']}
+              style={{ color: 'gray' }}
+              size="lg"
+            />
           </a>
         </Button>
         <Button className="footer-button ml-3" variant="outline-light">
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/tunde-oretade/" className="icon brands fa-linkedin">
-            <FontAwesomeIcon className="footer-icon" icon={['fab', 'linkedin']} style={{ color: 'gray' }} size="lg" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/tunde-oretade/"
+            className="icon brands fa-linkedin"
+          >
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={['fab', 'linkedin']}
+              style={{ color: 'gray' }}
+              size="lg"
+            />
           </a>
         </Button>
         <Button className="footer-button ml-3" variant="outline-light">
-          <a target="_blank" rel="noreferrer" href="https://codepen.io/highness" className="icon brands fa-codepen">
-            <FontAwesomeIcon className="footer-icon" icon={['fab', 'codepen']} style={{ color: 'gray' }} size="lg" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://codepen.io/highness"
+            className="icon brands fa-codepen"
+          >
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={['fab', 'codepen']}
+              style={{ color: 'gray' }}
+              size="lg"
+            />
           </a>
         </Button>
-        {/* <Button className="footer-button ml-3" variant="outline-light">
-          <a target="_blank" rel="noreferrer" href="#" className="icon brands fa-angellist">
-            <FontAwesomeIcon className="footer-icon" icon={['fab', 'angellist']} style={{ color: 'gray' }} size="lg" />
+        <Button className="footer-button ml-3" variant="outline-light">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://angel.co/u/tunde-oretade"
+            className="icon brands fa-angellist"
+          >
+            <FontAwesomeIcon
+              className="footer-icon"
+              icon={['fab', 'angellist']}
+              style={{ color: 'gray' }}
+              size="lg"
+            />
           </a>
-        </Button> */}
+        </Button>
         <ul className=" copyright ">
-          <li className="d-inline" style={{ marginLeft: '-3em' }}>© 2022 | Tunde Oretade</li>
+          <li className="d-inline" style={{ marginLeft: '-3em' }}>
+            © 2022 | Tunde Oretade
+          </li>
         </ul>
       </Col>
     </Row>
