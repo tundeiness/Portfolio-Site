@@ -38,7 +38,7 @@ const Footer = () => (
           </a>
         </Button> */}
         <ul className=" copyright ">
-          <li className="d-inline" style={{ marginLeft: '-3em' }}>© 2021 | Tunde Oretade</li>
+          <li className="d-inline" style={{ marginLeft: '-3em' }}>© 2022 | Tunde Oretade</li>
         </ul>
       </Col>
     </Row>
