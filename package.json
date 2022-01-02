@@ -15,6 +15,8 @@
     "bootstrap": "^4.5.0",
     "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.4",
+    "install": "^0.13.0",
+    "npm": "^8.3.0",
     "npx": "^10.2.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -26,7 +28,7 @@
     "react-spring": "^8.0.27",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
-    "sweetalert2": "^10.16.7"
+    "sweetalert2": "^10.16.9"
   },
   "scripts": {
     "start": "react-scripts start",
