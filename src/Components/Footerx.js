@@ -8,7 +8,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../fontawesome';
 
-const Footer = () => (
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return(
   <>
     <Row className="row-footer mt-5 mb-2 pt-5 justify-content-center" id="footer">
       <Col className="footer-inner" lg={12} xs={12}>
@@ -38,10 +41,11 @@ const Footer = () => (
           </a>
         </Button> */}
         <ul className=" copyright ">
-          <li className="d-inline" style={{ marginLeft: '-3em' }}>© 2020 | Tunde Oretade</li>
+          <li className="d-inline" style={{ marginLeft: '-3em' }}>© {currentYear} | Tunde Oretade</li>
         </ul>
       </Col>
     </Row>
   </>
-);
+  );
+};
 export default Footer;
